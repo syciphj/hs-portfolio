@@ -79,6 +79,3 @@ export class ImageCloudinaryService {
   }
 
 }
-//lift-highlight_z5rb8
-
-//https://res.cloudinary.com/dsatw0cbp/image/upload/w_600,c_scale,q_80/v1668114809/Portfolio/lift-highlight_z5rb8o.webp

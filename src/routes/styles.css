@@ -146,6 +146,34 @@ ul.tags {
 	padding-bottom: 3em;
 }
 
+ul.roles {
+	display:flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0; 
+}
+
+ul.roles li {
+	padding-right: 0.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+ul.roles li:after {
+	padding-left: 0.5em;
+	content: "|"
+}
+
+ul.roles li:last-of-type:after {
+	content: "";
+	padding: 0;
+}
+
+ul.roles li:last-of-type {
+	padding: 0;
+}
+
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;

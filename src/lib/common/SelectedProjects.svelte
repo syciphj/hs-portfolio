@@ -27,20 +27,11 @@
         <p>Lift was a commercial health & wellness app curated for companies to customize their own wellness programs.
           Life Mobile was the customer-facing app.
         </p>
-        <a href="/projects/lift" class="nav-button">view details</a>
+        <a href="/projects/lift-mobile" class="nav-button">view details</a>
       </div>
       <div class="project-image">
         <Image imgPath={imagePaths.liftMobile} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
-      <!-- <picture class="project-image">
-        <source srcset="{lift_webp}, {lift_webp2x} 2x, {lift_webp3x} 3x" type="image/webp">
-        <img  loading="lazy"
-              decoding="async"
-              src={lift_fallback} 
-              srcset="{lift_fallback} 600w, {lift_fallback2x} 1200w, {lift_fallback3x} 1800w "
-              sizes="(max-width: 700px) 100vw, 450px"
-              alt="Lift Sample Images">
-      </picture> -->
     </div>
 
     <!-- Lift CMS -->
@@ -48,15 +39,6 @@
       <div class="project-image">
         <Image imgPath={imagePaths.liftDesktop} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
-      <!-- <picture class="project-image">
-        <source sizes="(max-width: 600px) 100vw, 50vw"
-                srcset={lift_desktop_webp} type="image/webp">
-        <img  loading="lazy"
-              decoding="async"
-              height="400" width="500"
-              src={lift_desktop_fallback}
-              alt="Lift Desktop CMS Sample Images">
-      </picture> -->
       <div class="project-blurb text-right">
         <h2>Lift CMS</h2>
         <ul class="roles flex-end">
@@ -65,7 +47,7 @@
           <li>Fullstack development</li>
         </ul>
         <p>Lift CMS was the the desktop app that controlled the events and wellness programs behind the scenes. </p>
-        <a href="/projects/lift" class="nav-button">View details</a>
+        <a href="/projects/lift-cms" class="nav-button">View details</a>
       </div>
     </div>
 
@@ -78,24 +60,12 @@
           <li>Branding</li>
           <li>Frontend development</li>
         </ul>
-        <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.
-        </p>
-        <a href="/projects/lift" class="nav-button">View Details</a>
+        <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.</p>
+        <a href="/projects/easimed" class="nav-button">View Details</a>
       </div>
       <div class="project-image">
         <Image imgPath={imagePaths.easimed} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
-      <!-- <picture class="project-image">
-        <source sizes="(max-width: 600px) 100vw, 50vw" 
-                srcset={easimed_webp} 
-                type="image/webp">
-        <img  loading="lazy"
-              decoding="async"
-              height="400" width="500"
-              src={easimed_fallback} 
-              alt="Lift Desktop CMS Sample Images"
-          >
-      </picture> -->
     </div>
 
 
@@ -163,33 +133,6 @@
     transition: height 0.5s ease-in-out, transform 0.6s ease-in-out; 
   } */
 
-  ul.roles {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0; 
-  }
-
-  ul.roles li {
-    padding-right: 0.5em;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.8rem;
-  }
-
-  ul.roles li:after {
-    padding-left: 0.5em;
-    content: "|"
-  }
-
-  ul.roles li:last-of-type:after {
-    content: "";
-    padding: 0;
-  }
-
-  ul.roles li:last-of-type {
-    padding: 0;
-  }
 
   @media (max-width: 800px) {
     .project-image {
