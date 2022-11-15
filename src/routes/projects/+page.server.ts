@@ -1,5 +1,6 @@
 import { dev } from '$app/environment';
 import type { PageServerLoad } from './$types';
+import type { ProjectMetaData } from '$lib/services/projects.service';
 import { error } from '@sveltejs/kit'
 import { ProjectDataService } from '$lib/services/projects.service'
 
@@ -14,8 +15,11 @@ const service = new ProjectDataService();
 
 export const load: PageServerLoad = async () => {
   
-  const projects = await service.getAllProjects()
-  
+  //const projects = await service.getAllProjects()
+
+  const projects : ProjectMetaData[] = await service.getAllProjectPosts();
+  //console.log(tests);
+  //debugger;
   if(!projects) {
     throw error(404, { message: 'Not Found'});
   }

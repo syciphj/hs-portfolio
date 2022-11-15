@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "NODE_OPTIONS=\"--inspect\" vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -21,6 +21,7 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0",
@@ -34,6 +35,8 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
 		"@fontsource/open-sans": "^4.5.13",
-		"@fontsource/poppins": "^4.5.10"
+		"@fontsource/poppins": "^4.5.10",
+		"date-fns": "^2.29.3",
+		"node-html-parser": "^6.1.4"
 	}
 }
