@@ -1,4 +1,10 @@
-import  website  from '$lib/config/website';
+import {browser} from '$app/environment';
+import { format } from 'date-fns'
+import { parse } from 'node-html-parser'
+
+if(browser) {
+  throw new Error(`posts can only be imported server-side`)
+};
 
 export enum ProjectRoles {
   UX = 'UX',
@@ -36,6 +42,22 @@ export interface Project {
   designTools: DesignTools[],
   techTools: TechTools[],
   projectURL: string
+}
+
+export interface Preview {
+  html?: string,
+  text?: string
+}
+
+export interface ProjectMetaData {
+  date: string,
+  designTools?: DesignTools[],
+  isIndexFile?: boolean,
+  preview?: Preview,
+  roles?: ProjectRoles[],
+  slug: string,
+  thumbnailID: string,
+  title: string
 }
 
 const projects : Project[]= [{
@@ -102,12 +124,41 @@ const projects : Project[]= [{
 ];
 
 export class ProjectDataService {
-  getAllProjects = async() => {
-    return await projects;
+
+
+  private addTimezoneOffset = (date: Date) => {
+    const offsetInMilliseconds = new Date().getTimezoneOffset() * 60 * 1000
+    return new Date(new Date(date).getTime() + offsetInMilliseconds)
   }
 
-  getPostBySlug = async (slug: string) => {
-    const project = projects.filter(proj => proj.slug === slug);
-    return await project[0];
+  getAllProjectPosts = async(): Promise<ProjectMetaData[]> => {
+    const posts : ProjectMetaData[] = await Object.entries(import.meta.glob('/projects/**/*.md', {eager: true}))
+      .map(([filepath, post]: [string, any]) => {
+        const html = parse(post.default.render().html);
+        const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
+
+        return {
+          ...post.metadata,
+
+          slug : filepath.replace(/(\/index)?\.md/, '').split('/').pop(),
+
+          date: post.metadata.date ? format(this.addTimezoneOffset(new Date(post.metadata.date)), 'yyyy-MM-dd') : undefined,
+
+          preview: {
+            html: preview?.toString(),
+            text: preview?.structuredText ?? preview?.toString()
+          }
+        }
+      })
+      .sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      return posts;
+  }
+
+  public posts : Promise<ProjectMetaData[]> = this.getAllProjectPosts();
+
+  getPostBySlug = async(slug: string) => {
+    const post = (await this.posts).find((post) => post.slug === slug)
+    return post;
    }
+
 }

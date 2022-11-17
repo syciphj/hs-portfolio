@@ -1,7 +1,95 @@
 <script lang="ts">
   import type {PageData} from './$types'
+  import {format, parseISO} from 'date-fns'
+  import { afterNavigate } from '$app/navigation'
+  import website  from '$lib/config/website'
+  import ArrowLeftIcon from '$lib/assets/icons/ArrowLeftIcon.svelte';
+
   export let data: PageData;
+
+
+  let canBack = false;
+  afterNavigate(({ from }) => {
+    if(from &&  (from.url.pathname.startsWith('/projects') || from.route.id === "/")) {
+      canBack = true;
+    }
+  });
+
+  function goBack() {
+    if(canBack) history.back();
+  }
 </script>
 
-<h1>{data.post.title}</h1>
-<div>{@html data.post.description}</div>
+<svelte:head>
+  <title>{data.post.title}</title>
+  <meta name="description" content={data.post.preview?.text} />
+</svelte:head>
+
+<div class="root">
+  <div class="back-container">
+    <button class="back-btn" on:click={goBack} on:keydown={goBack}>
+      <ArrowLeftIcon class="back-icon"/>
+    </button>
+  </div>
+
+  <article>
+    <time>
+      <span class="date-text">{format(new Date(parseISO(data.post.date)), 'MMMM d, yyyy')}</span>
+    </time>
+
+    <h1>{data.post.title}</h1>
+
+    <svelte:component this={data.component} />
+  </article>
+</div>
+
+
+
+
+<style>
+  .root {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+
+  .back-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    padding: 0;
+    color: var(--color-theme-1);
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--color-theme-1);
+    padding: 0.8rem;
+  }
+
+  .date-text {
+    display: flex;
+    color: rgba(155, 155, 155, 0.719);
+    font-weight: 200;
+  }
+
+  .date-text::before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 1rem;
+    border-left: 3px solid rgba(184, 183, 183, 0.489);
+    align-self: center;
+  }
+
+  /* article {
+    display: flex;
+    flex-direction: column;
+    max-width: 55vw;
+    align-self: center;
+  }
+
+  @media(max-width: 850px) {
+    article {
+      max-width: 85vw;
+    }
+  } */
+</style>

@@ -2,14 +2,15 @@
   import test from '$lib/assets/images/thumbnail-sample.png'
   import icon from '$lib/assets/icons/more-icon.svg';
   import ProjectItem from '$lib/common/Project.svelte';
-  import type { Project } from '$lib/services/projects.service';
+  import type { Project, ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
   import {ImageCloudinaryService, key} from '$lib/services/image-formatter.service';
   import { setContext } from 'svelte';
+	import ProjectCard from '$lib/common/Project.svelte';
   setContext(key, new ImageCloudinaryService());
 
-  export let projects : Project[];
-
+  export let projects : ProjectMetaData[];
+  
   const thumbnailParams = {
     width: 350
   }
@@ -29,11 +30,17 @@
         <img src={test} alt="test">
       </picture> -->
       <h2 class="project-title">{project.title}</h2>
+      
       <ul class="roles">
-        {#each project.roles as role}
-        <li>{role}</li>
-        {/each}
+        {#if project.roles}
+          {#each project.roles as role}
+          <li>{role}</li>
+          {/each}
+        {:else}
+          <li>Design</li>
+        {/if}
       </ul>
+      
       <div class="icon">
         <img class="more-icon" src={icon} alt='view more icon'>
       </div>
@@ -56,7 +63,7 @@
 
   .card-grid {
     display:grid;
-    grid-template-rows: 150px 100px 1fr 1fr;
+    grid-template-rows: 150px 100px 40px 25px;;
     grid-template-columns: repeat(4, 25%);
   }
 
@@ -81,8 +88,8 @@
   }
 
   .icon {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     background-color: black;
     border-radius: 100%;
     grid-column: 4 / 5;
@@ -94,6 +101,6 @@
   }
 
   .more-icon {
-    padding: 1em;
+    padding: 12px;
   }
 </style>

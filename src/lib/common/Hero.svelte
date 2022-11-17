@@ -1,20 +1,19 @@
 <script>
+  import website from '$lib/config/website'
   import email from '$lib/assets/logos/email.svg'
   import linkedin from '$lib/assets/logos/linkedin.svg'
   import github from '$lib/assets/logos/github.svg'
-
 </script>
 
 <section class="hero">
   <h1>Heya, Henri here.</h1>
   <h2>I design, code, and lead global teams. </h2>
   <p>I have been leading support and development teams for 5 years now.  I also design and implement delightful web & mobile experiences that start and end with the customer in mind. </p>
-  <p>On my spare time, I read books, game with friends, and run an animal rescue shelter with my wife.</p>
 
   <div class="socials">
-    <a href="/"><img src={email} alt="logo"></a>
-    <a href="/"><img src={linkedin} alt="logo"></a>
-    <a href="/"><img src={github} alt="logo"></a>
+    <a href="mailto:{website.email}" alt="LinkedIn Link" aria-label="Reach out on Email"><img src={email} alt="Email Link" aria-label="Reach out via Email"></a>
+    <a href={website.linkedinURL} target="blank"><img src={linkedin} alt="LinkedIn Link" aria-label="Reach out via LinkedIn"></a>
+    <a href={website.githubURL}><img src={github} alt="Github Link" aria-label="View Github"></a>
   </div>
 
   <!-- <div class="cta">
@@ -68,11 +67,6 @@
     width: 1.5em;
     height: 1.5em;
     object-fit: contain;
-    opacity: 70%;
-  }
-
-  .cta {
-    margin-top: 2em;
   }
 
   .scroll {
