@@ -1,11 +1,13 @@
 <script lang="ts">
   import { page } from '$app/stores'
-  import logo from '$lib/assets/logos/svelte-logo.svg'
+  import Logo from '$lib/assets/logos/HenriLogo.svelte'
 </script>
 
 <header>
   <div class="logo">
-    <a href="/"><img src={logo} alt="logo"></a>
+    <a href="/">
+      <Logo />
+    </a>
   </div>
 
   <nav>
@@ -27,8 +29,8 @@
   }
 
   .logo {
-    width: 4em;
-    height: 4em;
+    width: 75px;
+    padding-left: 3em;
   }
 
   .logo a {
@@ -37,12 +39,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-  }
-
-  .logo img {
-    width: 2em;
-    height: 2em;
-    object-fit: contain;
   }
 
   nav {

@@ -76,7 +76,11 @@
 
 <style>
   h1 {
-    font-weight: 700
+    font-weight: 600
+  }
+
+  h2 {
+    font-weight: 600
   }
   
   section {

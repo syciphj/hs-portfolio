@@ -10,7 +10,7 @@
   setContext(key, new ImageCloudinaryService());
 
   export let projects : ProjectMetaData[];
-  debugger;
+  
   const thumbnailParams = {
     width: 350
   }

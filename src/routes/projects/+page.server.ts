@@ -15,11 +15,8 @@ const service = new ProjectDataService();
 
 export const load: PageServerLoad = async () => {
   
-  //const projects = await service.getAllProjects()
-
   const projects : ProjectMetaData[] = await service.getAllProjectPosts();
-  //console.log(tests);
-  //debugger;
+
   if(!projects) {
     throw error(404, { message: 'Not Found'});
   }

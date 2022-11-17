@@ -13,7 +13,7 @@
 	--color-bg-0: rgb(255, 255, 255);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
+	--color-theme-1: #4457DE;
 	--color-theme-2: #40b3ff;
   --color-link: rgb(29, 28, 28);
 	--color-text: rgba(0, 0, 0, 0.7);
@@ -99,22 +99,37 @@ input {
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	border-radius: 0;
-	border: 2.5px solid black;
+	border: 2.5px solid var(--color-theme-1);
 	background-color: transparent;
 	padding: 0.5rem 1rem;
 	cursor: pointer;
 	transition: all 0.5s ease-in-out;
+	color: var(--color-theme-1)
 }
 
 .nav-button:hover, button:hover {
-	background: black;
+	background: var(--color-theme-1);
 	color: white;
 	text-decoration: none;
+}
+
+button:hover #arrow {
+	stroke: white;
 }
 
 button:focus:not(:focus-visible) {
 	outline: none;
 }
+
+.back-icon #arrow {
+	stroke: var(--color-theme-1);
+	stroke-width: 2px;
+	transition: all 0.5s ease-in-out;
+}
+
+/* .back-icon:hover #arrow {
+	stroke: white;
+} */
 
 ul.tags {
 	list-style: none;
