@@ -7,6 +7,7 @@ import {
   PUBLIC_EMAIL
 } from '$env/static/public';
 
+
 const website = {
   cloudinaryURL: PUBLIC_CLOUDINARY_URL,
   cloudinaryVersionFolder: PUBLIC_CLOUDINARY_VERSION_FOLDER,

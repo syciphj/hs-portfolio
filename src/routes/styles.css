@@ -189,6 +189,15 @@ ul.roles li:last-of-type {
 	padding: 0;
 }
 
+.menu-icon, .close-icon {
+	stroke: var(--color-link);
+	transition: all 0.2s ease-in;
+}
+
+.menu-icon:hover, .close-icon:hover {
+	stroke: var(--color-theme-1);
+}
+
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;

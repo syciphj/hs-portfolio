@@ -1,6 +1,12 @@
 <script lang="ts">
   import { page } from '$app/stores'
   import Logo from '$lib/assets/logos/HenriLogo.svelte'
+  import MobileMenu from '$lib/common/MobileMenu.svelte'
+  import routes from '$lib/services/routes.service'
+  import MenuIcon from '$lib/assets/icons/MenuIcon.svelte'
+  
+  let isShowMenu = false; 
+  const toggleMenu = () => {isShowMenu = !isShowMenu;}
 </script>
 
 <header>
@@ -11,26 +17,40 @@
   </div>
 
   <nav>
-    <ul>
-      <li aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}>
-        <a href="/projects">Projects</a>
-      </li>
-      <li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
-        <a href="/contact">Contact</a>
-      </li>
+    <ul class="desktop">
+      {#each routes as route}
+        {#if route.name !== 'Home'}
+        <li aria-current={$page.url.pathname.startsWith(route.href) ? 'page' : undefined}>
+          <a href={route.href}>{route.name}</a>
+        </li>
+        {/if}
+      {/each}
     </ul>
+    <div class="mobile">
+      <div class="menu-container" on:click={toggleMenu} on:keydown={toggleMenu}>
+        <!-- <span class="menu-icon">Menu</span> -->
+        <MenuIcon class="menu-icon"/>
+      </div>
+    </div>
   </nav>
+
+  {#if isShowMenu}
+    <MobileMenu onClose={toggleMenu}/>
+  {/if}
+
 </header>
 
 <style>
   header {
     display: flex;
     justify-content: space-between;
+    max-width: 64rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .logo {
     width: 75px;
-    padding-left: 3em;
   }
 
   .logo a {
@@ -43,25 +63,25 @@
 
   nav {
     align-self: center;
-    width: 30em;
   }
 
-  nav ul {
+  .desktop{
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
+    width: 14em;
   }
 
   li[aria-current="page"] a {
     color: var(--color-theme-1);
   }
 
-  nav a {
+  .desktop a {
     transition: color 0.2s linear;
     letter-spacing: 0.1em;
     text-decoration: none;
-    padding: 0 0.5rem;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
@@ -71,5 +91,25 @@
   a:hover {
     text-decoration: none;
     color: var(--color-theme-1);
+  }
+
+  .mobile {
+    display:none;
+  }
+
+  .menu-container{
+    display:block;
+    width: 1.2em;
+    cursor: pointer;
+  }
+
+  @media(max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+    }
   }
 </style>

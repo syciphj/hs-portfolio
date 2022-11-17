@@ -1,16 +1,17 @@
 <script lang="ts">
-  import { ImageCloudinaryService, key, type ImageParams } from '$lib/services/image-formatter.service';
+  import { ImageCloudinaryService, key as imgKey, type ImageParams } from '$lib/services/image-formatter.service';
   import { getContext } from 'svelte';
 
   export let imgPath: string;
   export let sizes: string;
   export let params : ImageParams;  
+  export let hoverEffect = "true";
 
   let style = ''
   let imgSrcSet: string = '';
   let pictureSrcSet: string = '';
 
-  const imageService: ImageCloudinaryService = getContext(key);
+  const imageService: ImageCloudinaryService = getContext(imgKey);
   const sizesSrcsetArr = imageService.getSizesSrcset(imgPath, params)
   const densitySrcsetArr = imageService.getDensitySrcset(imgPath, params)
   const src = sizesSrcsetArr[0].split(' ')[0];
@@ -26,11 +27,17 @@
       src={src}
       srcset={imgSrcSet}
       sizes={sizes}
-      alt="Lift Sample Images">
+      alt="Lift Sample Images"
+      class:hoverEffect={hoverEffect === 'true'}
+      >
 </picture>
 
 <style>
-  img:hover{
+  /* img:hover{
+    transform: scale(1.2)
+  } */
+
+  img.hoverEffect:hover {
     transform: scale(1.2)
   }
 

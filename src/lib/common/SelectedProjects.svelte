@@ -105,7 +105,7 @@
   .project-card {
     display: flex;
     width: 100%;
-    margin: 2em 1em;
+    margin: 3em 1em;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -144,7 +144,7 @@
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 836px) {
     .project-blurb {
       order: 2;
       width: 100vw;

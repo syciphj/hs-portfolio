@@ -1,13 +1,10 @@
 <script lang="ts">
-  import test from '$lib/assets/images/thumbnail-sample.png'
   import icon from '$lib/assets/icons/more-icon.svg';
-  import ProjectItem from '$lib/common/Project.svelte';
   import type { Project, ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
   import {ImageCloudinaryService, key} from '$lib/services/image-formatter.service';
-  import { setContext } from 'svelte';
-	import ProjectCard from '$lib/common/Project.svelte';
-  setContext(key, new ImageCloudinaryService());
+  // import { setContext } from 'svelte';
+  // setContext(key, new ImageCloudinaryService());
 
   export let projects : ProjectMetaData[];
   
