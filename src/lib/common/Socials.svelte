@@ -8,7 +8,7 @@
 <div class="socials" class:vertical={orientation === 'vertical'}>
   {#each socials as social} 
     <a href={social.href} alt={social.alt} aria-label={social.ariaLabel}>
-      <img src={social.imgSrc} alt={social.alt}>
+      <svelte:component this={social.componentPath} class="socials-icon"></svelte:component>
       {#if displayText === 'true'}
       <span class="social-text">{social.displayText}</span>
       {/if}
@@ -37,12 +37,6 @@
 .socials a:hover {
   text-decoration: none;
   color: var(--color-theme-1);
-}
-
-.socials img {
-  width: 1.5em;
-  height: 1.5em;
-  object-fit: contain;
 }
 
 .social-text {

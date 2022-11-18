@@ -6,7 +6,7 @@ const service = new ProjectDataService();
 export const load: PageServerLoad = async ({ params }) => {
   const post = await service.getPostBySlug(params.slug)
   if(!post) {
-    throw error(404, { message: 'Not Found'});
+    throw error(404, { message: 'Project or Post Not Found'});
   }
 
   return { post };

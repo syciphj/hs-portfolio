@@ -3,8 +3,6 @@
   import type { Project, ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
   import {ImageCloudinaryService, key} from '$lib/services/image-formatter.service';
-  // import { setContext } from 'svelte';
-  // setContext(key, new ImageCloudinaryService());
 
   export let projects : ProjectMetaData[];
   
@@ -23,9 +21,6 @@
       <div class="project-thumbnail">
         <Image imgPath={testThumbnailURL} params={thumbnailParams} sizes="(max-width: 700px) 100vw, 350px" />
       </div>
-      <!-- <picture class="project-thumbnail">
-        <img src={test} alt="test">
-      </picture> -->
       <h2 class="project-title">{project.title}</h2>
       
       <ul class="roles">

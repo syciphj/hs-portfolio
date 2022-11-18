@@ -19,6 +19,7 @@
 	--color-text: rgba(0, 0, 0, 0.7);
   --color-text-heading: black;
   --color-footer: rgb(62, 61, 61);
+	--color-socials: rgb(96, 95, 95);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
@@ -121,16 +122,6 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-.back-icon #arrow {
-	stroke: var(--color-theme-1);
-	stroke-width: 2px;
-	transition: all 0.5s ease-in-out;
-}
-
-/* .back-icon:hover #arrow {
-	stroke: white;
-} */
-
 ul.tags {
 	list-style: none;
 	display: flex;
@@ -188,6 +179,18 @@ ul.roles li:last-of-type:after {
 ul.roles li:last-of-type {
 	padding: 0;
 }
+/* Project Post general styles */ 
+
+.post-image-container {
+	overflow: hidden;
+}
+
+/* Icon colors and control */ 
+.back-icon #arrow {
+	stroke: var(--color-theme-1);
+	stroke-width: 2px;
+	transition: all 0.5s ease-in-out;
+}
 
 .menu-icon, .close-icon {
 	stroke: var(--color-link);
@@ -196,6 +199,17 @@ ul.roles li:last-of-type {
 
 .menu-icon:hover, .close-icon:hover {
 	stroke: var(--color-theme-1);
+}
+
+.socials-icon {
+	display:block;
+	width: 1.4em;
+	fill: var(--color-socials);
+	transition: fill 0.2s ease-in;
+}
+
+a:hover > .socials-icon {
+	fill: var(--color-theme-1);
 }
 
 @media (min-width: 720px) {

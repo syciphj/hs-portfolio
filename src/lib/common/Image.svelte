@@ -10,14 +10,21 @@
   let style = ''
   let imgSrcSet: string = '';
   let pictureSrcSet: string = '';
+  let src: string = '';
 
   const imageService: ImageCloudinaryService = getContext(imgKey);
-  const sizesSrcsetArr = imageService.getSizesSrcset(imgPath, params)
-  const densitySrcsetArr = imageService.getDensitySrcset(imgPath, params)
-  const src = sizesSrcsetArr[0].split(' ')[0];
+  if(imageService) {
+    const sizesSrcsetArr = imageService.getSizesSrcset(imgPath, params)
+    const densitySrcsetArr = imageService.getDensitySrcset(imgPath, params)
+    src = sizesSrcsetArr[0].split(' ')[0];
 
-  sizesSrcsetArr.forEach(src => {imgSrcSet += src});
-  densitySrcsetArr.forEach(src => {pictureSrcSet += src});
+    sizesSrcsetArr.forEach(src => {imgSrcSet += src});
+    densitySrcsetArr.forEach(src => {pictureSrcSet += src});
+  } else {
+    // throw new Error('Image service was not initialized');
+    console.log('image service not initialized');
+  }
+  
 </script>
 <picture>
   <source srcset={pictureSrcSet} type="image/webp">

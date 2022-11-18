@@ -32,7 +32,7 @@ export interface ImageParams {
 
 const numResolutionTypes = 3;
 
-export const key = Symbol();
+export const key = Symbol('imgService');
 
 export class ImageCloudinaryService {
   private readonly defaultCropMode = CropEnum.Scale;

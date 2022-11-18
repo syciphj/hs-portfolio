@@ -12,7 +12,7 @@
     <ul>
     {#each routes as route}
       <li>
-        <a href={route.href} aria-label="Go to {route.name} page">{route.name}</a>
+        <a class="route" href={route.href} aria-label="Go to {route.name} page">{route.name}</a>
       </li>
     {/each }
     </ul>
@@ -60,6 +60,14 @@
 
   .socials-container {
     width: 10em;
+  }
+
+  .route {
+    text-decoration: none;
+  }
+
+  .route:hover {
+    color: var(--color-theme-1)
   }
 
   @media(max-width: 730px) {

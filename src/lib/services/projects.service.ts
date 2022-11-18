@@ -50,14 +50,17 @@ export interface Preview {
 }
 
 export interface ProjectMetaData {
+  title: string,
   date: string,
+  slug: string,
+  thumbnailID: string,
   designTools?: DesignTools[],
+  techTools?: TechTools[],
   isIndexFile?: boolean,
   preview?: Preview,
   roles?: ProjectRoles[],
-  slug: string,
-  thumbnailID: string,
-  title: string
+  url?: string
+
 }
 
 const projects : Project[]= [{

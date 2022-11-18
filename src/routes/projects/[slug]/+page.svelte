@@ -7,7 +7,6 @@
 
   export let data: PageData;
 
-
   let canBack = false;
   afterNavigate(({ from }) => {
     if(from &&  (from.url.pathname.startsWith('/projects') || from.route.id === "/")) {
@@ -39,7 +38,7 @@
 
     <h1>{data.post.title}</h1>
 
-    <svelte:component this={data.component} />
+    <svelte:component this={data.component}/>
   </article>
 </div>
 
