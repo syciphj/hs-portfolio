@@ -3,10 +3,8 @@
   import { fade } from 'svelte/transition';
   import routes from '$lib/services/routes.service'
   import CloseIcon from '$lib/assets/icons/CloseIcon.svelte'
-  
 
   export let onClose : any;
-  let thisPage = $page
 </script>
 
 <div class="modal-container" transition:fade={{duration: 200}}>

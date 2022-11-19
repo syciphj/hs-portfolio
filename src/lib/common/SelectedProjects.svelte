@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import Image from '$lib/common/Image.svelte';
   import type {ImageParams} from '$lib/services/image-formatter.service';
   const imagePaths = {
@@ -6,6 +7,8 @@
     liftDesktop: 'lift-desktop-highlight_ozpecm',
     easimed: 'easimed-highlight_xwgoqb'
   };
+
+  const baseStr = base === undefined ? '' : base;
 
   const projectImageParams : ImageParams = {
     width: 600
@@ -27,7 +30,7 @@
         <p>Lift was a commercial health & wellness app curated for companies to customize their own wellness programs.
           Life Mobile was the customer-facing app.
         </p>
-        <a href="/projects/lift-mobile" class="nav-button">view details</a>
+        <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>
       <div class="project-image">
         <Image imgPath={imagePaths.liftMobile} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
@@ -47,7 +50,7 @@
           <li>Fullstack development</li>
         </ul>
         <p>Lift CMS was the the desktop app that controlled the events and wellness programs behind the scenes. </p>
-        <a href="/projects/lift-cms" class="nav-button">View details</a>
+        <a href="{baseStr}/projects/lift-cms" class="nav-button">View details</a>
       </div>
     </div>
 
@@ -61,7 +64,7 @@
           <li>Frontend development</li>
         </ul>
         <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.</p>
-        <a href="/projects/easimed" class="nav-button">View Details</a>
+        <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
       </div>
       <div class="project-image">
         <Image imgPath={imagePaths.easimed} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />

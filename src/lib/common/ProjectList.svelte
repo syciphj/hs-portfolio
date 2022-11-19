@@ -1,5 +1,6 @@
 <script lang="ts">
   import icon from '$lib/assets/icons/more-icon.svg';
+  import { base } from '$app/paths';
   import type { Project, ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
   import {ImageCloudinaryService, key} from '$lib/services/image-formatter.service';
@@ -10,6 +11,9 @@
     width: 350
   }
 
+  const baseStr = base === undefined ? '' : base;
+
+
   const testThumbnailURL = 'lift-thumbnail_ulqrrq'
 </script>
 
@@ -17,7 +21,7 @@
 <section class="project-grid">
   {#each projects as project }
   <div class="project-card">
-    <a class="card-grid" href="/projects/{project.slug}">
+    <a class="card-grid" href="{baseStr}/projects/{project.slug}">
       <div class="project-thumbnail">
         <Image imgPath={testThumbnailURL} params={thumbnailParams} sizes="(max-width: 700px) 100vw, 350px" />
       </div>

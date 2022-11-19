@@ -1,17 +1,20 @@
 <script lang="ts">
   import { page } from '$app/stores'
+  import { base } from '$app/paths'
   import Logo from '$lib/assets/logos/HenriLogo.svelte'
   import MobileMenu from '$lib/common/MobileMenu.svelte'
   import routes from '$lib/services/routes.service'
   import MenuIcon from '$lib/assets/icons/MenuIcon.svelte'
   
   let isShowMenu = false; 
-  const toggleMenu = () => {isShowMenu = !isShowMenu;}
+  const toggleMenu = () => {isShowMenu = !isShowMenu}
+  const baseStr = base === undefined ? '' : base;
+
 </script>
 
 <header>
   <div class="logo">
-    <a href="/">
+    <a href={baseStr + '/'}>
       <Logo />
     </a>
   </div>
