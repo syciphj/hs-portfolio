@@ -24,7 +24,12 @@ const config = {
   },
 	prerender: {
 		entries: ['*']
-	}
+	},
+  vite: {
+    build: {
+      modulePreload: {polyfill: true}
+    },
+  }
 };
 
 
