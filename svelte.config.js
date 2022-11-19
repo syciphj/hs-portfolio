@@ -20,16 +20,16 @@ const config = {
       }),
     paths: {
       base: developmentMode ? "" : "/hs-portfolio",
-    }
+    },
+    vite: {
+      build: {
+        modulePreload: {polyfill: true}
+      },
+  }
   },
 	prerender: {
 		entries: ['*']
-	},
-  vite: {
-    build: {
-      modulePreload: {polyfill: true}
-    },
-  }
+	}
 };
 
 
