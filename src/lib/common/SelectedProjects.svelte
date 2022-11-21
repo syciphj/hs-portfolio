@@ -43,7 +43,7 @@
           <li>Design</li>
         </ul>
         <p>Lift was a commercial health & wellness app curated for companies to customize their own wellness programs.
-          Life Mobile was the customer-facing app.
+          Lift Mobile was the customer-facing app.
         </p>
         <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>

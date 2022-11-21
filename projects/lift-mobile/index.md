@@ -1,6 +1,6 @@
 ---
 title: Lift Mobile
-date: 2022-01-01
+date: 2022-11-10
 thumbnailID: lift-thumbnail_ulqrrq
 preview: Lift was a commercial health & wellness app curated for companies to customize their own wellness programs. Life Mobile was the customer-facing app.
 roles: [UX, Design]
@@ -16,18 +16,41 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
   }
   setContext(imgKey, new ImageCloudinaryService());
 </script>
+
 <div class="post-image-container">
   <Image imgPath='lift-mobile-post_pw6wyi' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus. Nisi est sit amet facilisis magna etiam tempor orci. Dolor sed viverra ipsum nunc aliquet.
+## Background
 
-Et egestas quis ipsum suspendisse. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Lorem donec massa sapien faucibus. Faucibus nisl tincidunt eget nullam non nisi est. Odio facilisis mauris sit amet massa. Neque viverra justo nec ultrices dui sapien. Urna cursus eget nunc scelerisque. Adipiscing vitae proin sagittis nisl rhoncus.
+Lift was one of the 4 main product offerings under Easimed back in 2017 – a kind of Startup Labs under Pointwest Inc. The idea for Lift was to have customizable product specifically tailored for companies and organizations that wanted more control and interactivity for their health & wellness programs. 
 
-Elementum eu facilisis sed odio morbi. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus at urna condimentum mattis pellentesque id nibh. Pharetra sit amet aliquam id diam maecenas ultricies mi. Eu non diam phasellus vestibulum lorem sed risus ultricies. Quisque non tellus orci ac auctor augue mauris. Et pharetra pharetra massa massa. Mauris augue neque gravida in fermentum et sollicitudin. Ut enim blandit volutpat maecenas. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Libero enim sed faucibus turpis in eu mi. In nulla posuere sollicitudin aliquam ultrices. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Mi quis hendrerit dolor magna eget. Suscipit adipiscing bibendum est ultricies integer quis auctor elit.
+Think of how organizations or teams would organize walk/run challenges (e.g. team with the most steps win), but there would be an app and CMS that could easily manage that. The features for Lift expanded beyond exercise challenges but also gamified health & wellness tracking that could link to rewards. 
 
-Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Id nibh tortor id aliquet lectus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. At volutpat diam ut venenatis tellus in metus. Dictum sit amet justo donec enim diam vulputate. Malesuada fames ac turpis egestas. Ullamcorper sit amet risus nullam eget. In tellus integer feugiat scelerisque varius morbi. Duis tristique sollicitudin nibh sit amet commodo. Tristique sollicitudin nibh sit amet commodo nulla. Dolor sed viverra ipsum nunc aliquet. Tellus orci ac auctor augue mauris augue neque gravida in. Sagittis id consectetur purus ut faucibus pulvinar. Porta lorem mollis aliquam ut.
+<div class="post-image-container">
+  <Image imgPath='lift-mobile-typography_yqqat0' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+</div>
 
-Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Ullamcorper a lacus vestibulum sed arcu. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Nunc mattis enim ut tellus elementum sagittis vitae. Lobortis mattis aliquam faucibus purus in massa. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Gravida neque convallis a cras semper auctor. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Sit amet commodo nulla facilisi. Sem integer vitae justo eget magna fermentum iaculis eu non. Sed turpis tincidunt id aliquet risus feugiat in ante metus.
+## Design Process 
 
-Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Viverra adipiscing at in tellus integer. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Id interdum velit laoreet id donec. Pellentesque massa placerat duis ultricies lacus. Magna sit amet purus gravida quis. Vulputate eu scelerisque felis imperdiet proin. In ante metus dictum at tempor commodo ullamcorper a lacus. Nunc id cursus metus aliquam eleifend. Leo duis ut diam quam nulla porttitor massa. Dui id ornare arcu odio ut sem nulla. Et ultrices neque ornare aenean euismod elementum nisi. Ut eu sem integer vitae. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Arcu non odio euismod lacinia at quis. A pellentesque sit amet porttitor eget dolor morbi non arcu.
+Before a single pixel was digitally crafted, I advocated to go through an initial Design Sprint to ideate and get input from multiple stakeholders of the team. On Day 1 we crafted our customer journey maps and empathy maps to see how our app could be more impactful and usable. This was a specific design challenge because there are alternatives to simply sending various fitness tracker results and just rank people or teams by steps. So our app needed to be more than that. 
+
+From there, I gathered the top solutions from our ideation stage and storyboarded the top flows we as a team agreed on. I crafted the prototypes and facilitated both internal (as our company also wanted this for ourselves) and client user-testing and validation. After the results were presented to our PMs, we agreed on the flow and I crafted the style guide and screens for our mobile devs to work on. 
+
+<div class="post-image-container">
+  <Image imgPath='lift-mobile-mockup_mdaign' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+</div>
+
+## Challenges
+
+Just from hearing the idea that this would be an app akin to steps challenges, the usability and design needed to clearly show that it was better to use Lift compared to setting up a step program manually. We focused on a couple of key items: 
+1. Seamless integration with the top health tracking apps at the time 
+2. Hassle-free point ranking and teaming 
+3. Making it as social as possible. 
+
+My designs focused on highlighting these. For integration, our onboarding involved step-by-step guides for health app pairing. For the point ranking and teaming, the leaderboard was part of the main page for each goal. To make the app more social, we had an intuitive team creation and invite system. 
+
+
+
+
+

@@ -45,6 +45,10 @@
 </section>
 
 <style>
+
+  h2 {
+    font-size: 1rem;
+  }
   a:hover {
     text-decoration: none;
   }
