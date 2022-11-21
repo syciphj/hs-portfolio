@@ -9,7 +9,7 @@
 
   let canBack = false;
   afterNavigate(({ from }) => {
-    if(from &&  (from.url.pathname.startsWith('/projects') || from.route.id === "/")) {
+    if(from &&  (from.route.id === '/projects' || from.route.id === "/")) {
       canBack = true;
     }
   });
@@ -25,11 +25,13 @@
 </svelte:head>
 
 <div class="root">
+  {#if canBack}
   <div class="back-container">
     <button class="back-btn" on:click={goBack} on:keydown={goBack}>
       <ArrowLeftIcon class="back-icon"/>
     </button>
   </div>
+  {/if}
 
   <article>
     <time>
@@ -79,16 +81,10 @@
     align-self: center;
   }
 
-  /* article {
-    display: flex;
-    flex-direction: column;
-    max-width: 55vw;
-    align-self: center;
-  }
-
-  @media(max-width: 850px) {
-    article {
-      max-width: 85vw;
-    }
-  } */
+  @media(max-width: 768px) {
+   .root {
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 1fr;
+   }
+  } 
 </style>
