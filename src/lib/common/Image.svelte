@@ -22,7 +22,7 @@
     densitySrcsetArr.forEach(src => {pictureSrcSet += src});
   } else {
     // throw new Error('Image service was not initialized');
-    console.log('image service not initialized');
+    console.log('Image service not initialized');
   }
   
 </script>

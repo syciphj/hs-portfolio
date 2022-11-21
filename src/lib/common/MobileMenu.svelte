@@ -1,14 +1,14 @@
 <script lang="ts">
   import { page } from '$app/stores'
-  import { fade } from 'svelte/transition';
+  import { fade, fly } from 'svelte/transition'
   import routes from '$lib/services/routes.service'
   import CloseIcon from '$lib/assets/icons/CloseIcon.svelte'
 
   export let onClose : any;
 </script>
 
-<div class="modal-container" transition:fade={{duration: 200}}>
-  <div class="modal">
+<div class="modal-container" >
+  <div class="modal" transition:fly={{ y: -10, duration: 600}}>
     <div class="modal-actions">
       <span class="modal-title">Menu</span>
       <div class="close-btn" on:click={onClose} on:keydown={onClose}>
@@ -17,16 +17,24 @@
     </div>
     <ul class="nav-links">
       {#each routes as route}
-      <li class="nav-link" aria-current={$page.route.id === route.href ? 'page' : undefined}>
-        <a href={route.href} on:click={onClose} on:keydown={onClose}>{route.name}</a>
-      </li>
+      <a href={route.href} on:click={onClose} on:keydown={onClose}>
+        <li class="nav-link" aria-current={$page.route.id === route.routeID ? 'page' : undefined}>
+          {route.name}  
+        </li>
+      </a>
       {/each}
     </ul>
   </div>
 </div>
 
 
-<div class="modal-bg"></div>
+<div 
+  class="modal-bg" 
+  on:click={onClose} 
+  on:keydown={onClose} 
+  transition:fade={{duration: 300}}
+  >
+</div>
 
 
 <style>
@@ -92,7 +100,7 @@
     border-bottom: 1px solid rgba(229, 231, 235, 0.8);
   }
 
-  li[aria-current="page"] a {
+  .nav-link[aria-current="page"] {
     color: var(--color-theme-1);
   }
 

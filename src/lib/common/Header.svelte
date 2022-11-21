@@ -7,7 +7,17 @@
   import MenuIcon from '$lib/assets/icons/MenuIcon.svelte'
   
   let isShowMenu = false; 
-  const toggleMenu = () => {isShowMenu = !isShowMenu}
+  const toggleMenu = (e: Event) => {
+    if(e.type === 'keydown') {
+      let keyBoardEvent = <KeyboardEvent> e; 
+      if(keyBoardEvent.key !== 'Enter') { 
+        return;
+       } else {
+        isShowMenu = !isShowMenu
+       }
+    }
+    isShowMenu = !isShowMenu
+  }
   const baseStr = base === undefined ? '' : base;
 
 </script>
@@ -23,7 +33,7 @@
     <ul class="desktop">
       {#each routes as route}
         {#if route.name !== 'Home'}
-        <li aria-current={$page.url.pathname.startsWith(route.href) ? 'page' : undefined}>
+        <li aria-current={$page.route.id === route.routeID ? 'page' : undefined}>
           <a href={route.href}>{route.name}</a>
         </li>
         {/if}

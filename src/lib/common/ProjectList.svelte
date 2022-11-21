@@ -1,10 +1,8 @@
 <script lang="ts">
   import icon from '$lib/assets/icons/more-icon.svg';
   import { base } from '$app/paths';
-  import type { Project, ProjectMetaData } from '$lib/services/projects.service';
+  import type { ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
-  import {ImageCloudinaryService, key} from '$lib/services/image-formatter.service';
-
   export let projects : ProjectMetaData[];
   
   const thumbnailParams = {
