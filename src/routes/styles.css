@@ -26,6 +26,10 @@
 	color: var(--color-text);
 }
 
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;

@@ -47,7 +47,7 @@
         <ul class="roles flex-end">
           <li>UX</li>
           <li>Design</li>
-          <li>Fullstack development</li>
+          <li>Fullstack Dev</li>
         </ul>
         <p>Lift CMS was the the desktop app that controlled the events and wellness programs behind the scenes. </p>
         <a href="{baseStr}/projects/lift-cms" class="nav-button">View details</a>
@@ -61,7 +61,7 @@
         <ul class="roles">
           <li>Design</li>
           <li>Branding</li>
-          <li>Frontend development</li>
+          <li>Frontend Dev</li>
         </ul>
         <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.</p>
         <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
@@ -74,7 +74,7 @@
 </section>
 <section class="view-more">
   <h1>Want to view more?</h1>
-  <p class="view-more-text">If you'd like to see more of my projects or work experiences please visit the projects page by clicking the link below</p>
+  <p class="view-more-text">If you'd like to see more of my projects please visit the projects page through the link below</p>
   <a href="{baseStr}/projects" class="nav-button">View all projects</a>
 </section>
 
