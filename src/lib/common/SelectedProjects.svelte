@@ -1,5 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+
   import Image from '$lib/common/Image.svelte';
   import type {ImageParams} from '$lib/services/image-formatter.service';
   const imagePaths = {
@@ -13,6 +15,19 @@
   const projectImageParams : ImageParams = {
     width: 600
   }
+
+  onMount(() => {
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  });
 </script>
 
 <section>
@@ -32,14 +47,14 @@
         </p>
         <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>
-      <div class="project-image">
+      <div class="project-image hidden">
         <Image imgPath={imagePaths.liftMobile} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
     </div>
 
     <!-- Lift CMS -->
     <div class="project-card">
-      <div class="project-image">
+      <div class="project-image hidden">
         <Image imgPath={imagePaths.liftDesktop} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
       <div class="project-blurb text-right">
@@ -66,13 +81,13 @@
         <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.</p>
         <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
       </div>
-      <div class="project-image">
+      <div class="project-image hidden">
         <Image imgPath={imagePaths.easimed} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
     </div>
   </div>
 </section>
-<section class="view-more">
+<section class="view-more hidden">
   <h1>Want to view more?</h1>
   <p class="view-more-text">If you'd like to see more of my projects please visit the projects page through the link below</p>
   <a href="{baseStr}/projects" class="nav-button">View all projects</a>
@@ -111,9 +126,10 @@
   .project-card {
     display: flex;
     width: 100%;
-    margin: 3em 1em;
+    margin: 2em 1em;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
   }
 
   .project-blurb {
@@ -150,7 +166,6 @@
     margin-bottom: 3em;
     
   }
-
   @media (max-width: 800px) {
     .project-image {
       width: 400px;
@@ -158,6 +173,10 @@
   }
 
   @media (max-width: 836px) {
+
+    .project-card{
+      padding: 2em 0;
+    }
     .project-blurb {
       order: 2;
       width: 100vw;
@@ -178,11 +197,12 @@
     }
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 400px) {
     .project-image {
       margin-bottom: 0;
       height: auto;
     }
   }
 
+  
 </style>

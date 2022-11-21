@@ -182,6 +182,33 @@ ul.roles li:last-of-type:after {
 ul.roles li:last-of-type {
 	padding: 0;
 }
+
+/* Transition classes */
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+	transition-delay: 300ms;
+}
+
+.hidden:nth-of-type(even) {
+	transform: translateX(100%);
+	overflow: hidden;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0) !important;
+}
+
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
 /* Project Post general styles */ 
 
 .post-image-container {
@@ -189,9 +216,9 @@ ul.roles li:last-of-type {
 }
 
 /* Icon colors and control */ 
-.back-icon #arrow {
+.back-icon {
 	stroke: var(--color-theme-1);
-	stroke-width: 2px;
+	width: 40px;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -214,6 +241,8 @@ ul.roles li:last-of-type {
 a:hover > .socials-icon {
 	fill: var(--color-theme-1);
 }
+
+
 
 @media (min-width: 720px) {
 	h1 {
