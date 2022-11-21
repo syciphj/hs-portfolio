@@ -40,7 +40,11 @@
     max-width: 64rem;
     width: 100%;
     margin: 0 auto;
-    height: 10em;
+    /* height: 10em; */
+  }
+
+  .footer-rights {
+    text-align: center;
   }
   
   .footer-links {
