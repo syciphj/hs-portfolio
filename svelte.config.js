@@ -21,10 +21,7 @@ const config = {
     paths: {
       base: developmentMode ? "" : "/hs-portfolio",
     }
-  },
-	prerender: {
-		entries: ['*']
-	}
+  }
 };
 
 

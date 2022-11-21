@@ -70,9 +70,12 @@
         <Image imgPath={imagePaths.easimed} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
       </div>
     </div>
-
-
   </div>
+</section>
+<section class="view-more">
+  <h1>Want to view more?</h1>
+  <p class="view-more-text">If you'd like to see more of my projects or work experiences please visit the projects page by clicking the link below</p>
+  <a href="{baseStr}/projects" class="nav-button">View all projects</a>
 </section>
 
 
@@ -132,14 +135,21 @@
     overflow: hidden;
   }
 
-  /* .project-image:hover :first-child{
-    transform: scale(1.2)
+  .view-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    height: 15em;
   }
-`
-  .project-image :first-child{
-    transition: height 0.5s ease-in-out, transform 0.6s ease-in-out; 
-  } */
 
+  .view-more-text {
+    width: 50%;
+    margin-bottom: 3em;
+    
+  }
 
   @media (max-width: 800px) {
     .project-image {
@@ -157,6 +167,14 @@
       height: 250px;
       width: 100vw;
       margin-bottom: 1em;
+    }
+    .view-more {
+      text-align: center;
+      margin-top: 3em;
+      margin-bottom: 2em;
+    }
+    .view-more-text {
+      width: 100%;
     }
   }
 

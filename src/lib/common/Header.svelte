@@ -29,11 +29,8 @@
         {/if}
       {/each}
     </ul>
-    <div class="mobile">
-      <div class="menu-container" on:click={toggleMenu} on:keydown={toggleMenu}>
-        <!-- <span class="menu-icon">Menu</span> -->
-        <MenuIcon class="menu-icon"/>
-      </div>
+    <div class="menu-container" on:click={toggleMenu} on:keydown={toggleMenu}>
+      <MenuIcon class="menu-icon"/>
     </div>
   </nav>
 
@@ -96,12 +93,8 @@
     color: var(--color-theme-1);
   }
 
-  .mobile {
-    display:none;
-  }
-
   .menu-container{
-    display:block;
+    display:none;
     width: 1.2em;
     cursor: pointer;
   }
@@ -111,8 +104,8 @@
       display: none;
     }
 
-    .mobile {
-      display: flex;
+    .menu-container {
+      display: block;
     }
   }
 </style>

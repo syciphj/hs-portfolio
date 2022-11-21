@@ -25,13 +25,14 @@
 </svelte:head>
 
 <div class="root">
-  {#if canBack}
   <div class="back-container">
+    {#if canBack}
     <button class="back-btn" on:click={goBack} on:keydown={goBack}>
       <ArrowLeftIcon class="back-icon"/>
     </button>
+    {/if}
   </div>
-  {/if}
+  
 
   <article>
     <time>
