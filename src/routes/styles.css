@@ -101,34 +101,6 @@ input {
 	font-family: inherit;
 }
 
-.nav-button, button {
-	font-family: var(--font-button);
-	font-weight: 300;
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	border-radius: 0;
-	border: 2.5px solid var(--color-theme-1);
-	background-color: transparent;
-	padding: 0.5rem 1rem;
-	cursor: pointer;
-	transition: all 0.5s ease-in-out;
-	color: var(--color-theme-1)
-}
-
-.nav-button:hover, button:hover {
-	background: var(--color-theme-1);
-	color: white;
-	text-decoration: none;
-}
-
-button:hover #arrow {
-	stroke: white;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
 ul.tags {
 	list-style: none;
 	display: flex;
@@ -219,20 +191,61 @@ ul.roles li:last-of-type {
 	overflow: hidden;
 }
 
+/* Button styles */
+
+.nav-button, button {
+	font-family: var(--font-button);
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	border-radius: 0;
+	border: 2.5px solid var(--color-theme-1);
+	background-color: transparent;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	color: var(--color-theme-1)
+}
+
+.nav-button:hover, button:hover {
+	background: var(--color-theme-1);
+	color: white;
+	text-decoration: none;
+}
+
+button:hover #back-arrow {
+	stroke: white;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
 /* Icon colors and control */ 
+
 .back-icon {
 	stroke: var(--color-theme-1);
 	width: 40px;
 	transition: all 0.5s ease-in-out;
 }
 
-.menu-icon, .close-icon {
-	stroke: var(--color-link);
+.menu-icon, .close-icon{
+	stroke: var(--color-theme-1);
 	transition: all 0.2s ease-in;
 }
 
 .menu-icon:hover, .close-icon:hover {
 	stroke: var(--color-theme-1);
+}
+
+.more-icon {
+	stroke: var(--color-theme-1);
+	width: 1em;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-card:hover .more-icon {
+	stroke: white;
 }
 
 .socials-icon {
@@ -251,5 +264,20 @@ a:hover > .socials-icon {
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-button, button {
+		background-color: var(--color-theme-1);
+		color: white;
+	}
+	
+	button:focus:not(:focus-visible) {
+		outline: none;
+	}
+
+	.back-icon, .more-icon {
+		stroke: white;
 	}
 }

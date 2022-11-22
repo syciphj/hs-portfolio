@@ -1,5 +1,5 @@
 <script lang="ts">
-  import icon from '$lib/assets/icons/more-icon.svg';
+  import MoreIcon from '$lib/assets/icons/MoreIcon.svelte';
   import { base } from '$app/paths';
   import type { ProjectMetaData } from '$lib/services/projects.service';
   import Image from '$lib/common/Image.svelte';
@@ -8,11 +8,7 @@
   const thumbnailParams = {
     width: 350
   }
-
   const baseStr = base === undefined ? '' : base;
-
-
-  const testThumbnailURL = 'lift-thumbnail_ulqrrq'
 </script>
 
 <h1>Projects</h1>
@@ -35,8 +31,8 @@
         {/if}
       </ul>
       
-      <div class="icon">
-        <img class="more-icon" src={icon} alt='view more icon'>
+      <div class="icon-container">
+        <MoreIcon class="more-icon" />
       </div>
       
     </a>
@@ -85,10 +81,8 @@
     grid-row: 4 / 4;
   }
 
-  .icon {
-    height: 40px;
-    width: 40px;
-    background-color: black;
+  .icon-container {
+    border: 1.5px solid var(--color-theme-1);
     border-radius: 100%;
     grid-column: 4 / 5;
     grid-row: 3 / 5;
@@ -96,9 +90,17 @@
     align-self: center;
     display: flex;
     margin-right: 0.2em;
+    padding: 0.8em;
+    transition: all 0.5s ease-in-out;
   }
 
-  .more-icon {
-    padding: 12px;
+  .project-card:hover .icon-container{
+    background-color: var(--color-theme-1);
+  }
+
+  @media(max-width: 768px) {
+    .icon-container {
+      background-color: var(--color-theme-1);
+    }
   }
 </style>
