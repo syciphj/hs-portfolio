@@ -2,7 +2,7 @@
 title: Lift Mobile
 date: 2022-11-10
 thumbnailID: lift-thumbnail_ulqrrq
-preview: Lift was a commercial health & wellness app curated for companies to customize their own wellness programs. Life Mobile was the customer-facing app.
+preview: Lift was a commercial health & wellness app curated for companies to customize their own wellness programs. Lift Mobile was the customer-facing app.
 roles: [UX, Design]
 designTools:  [Illustrator, Photoshop, Sketch, Figma]
 ---
@@ -10,7 +10,7 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
 <script>
   import Image from '$lib/common/Image.svelte';
   import { ImageCloudinaryService, key as imgKey } from '$lib/services/image-formatter.service';
-  import { setContext, getContext, getAllContexts } from 'svelte';
+  import { setContext } from 'svelte';
   const imgParams = {
     width: 850
   }

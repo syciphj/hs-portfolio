@@ -33,6 +33,7 @@
       decoding="async"
       src={src}
       srcset={imgSrcSet}
+      width={params.width}
       sizes={sizes}
       alt="Lift Sample Images"
       class:hoverEffect={hoverEffect === 'true'}

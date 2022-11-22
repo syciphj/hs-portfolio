@@ -3,7 +3,7 @@ import { base } from '$app/paths'
 export interface Route {
   name: string,
   href: string,
-  routeID?: string
+  routeID: string
 }
 
 const baseStr = base === undefined ? '' : base;

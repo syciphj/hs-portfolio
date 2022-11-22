@@ -49,8 +49,12 @@ p {
 }
 
 a {
-	color: var(--color-link);
+	color: var(--color-link--);
 	text-decoration: none;
+}
+
+p > a {
+	color: var(--color-theme-1);
 }
 
 a:hover {

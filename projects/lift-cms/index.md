@@ -1,46 +1,56 @@
 ---
 title: Lift CMS
-date: 2022-02-01
-thumbnailID: lift-thumbnail_ulqrrq
-preview: Lift was a commercial health & wellness app curated for companies to customize their own wellness programs. Life Mobile was the customer-facing app.'
-roles: [UX, Design]
-designTools: [Illustrator, Photoshop, Sketch, Figma]
-
+date: 2022-11-08
+thumbnailID: lift-cms-thumbnail_kvhpba
+preview: Lift CMS was the the desktop app that controlled the events and wellness programs behind the scenes.
+roles: [UX, Design, Fullstack]
+techTools: [Angular, Node, MongoDB]
+designTools:  [Illustrator, Photoshop, Sketch]
 ---
 
-Thanks for checking out my blog template. It's based on the blog I built for my own [website](https://mattjennings.io) and I hope this is a good starting point for you to start yours.
+<script>
+  import Image from '$lib/common/Image.svelte';
+  import { base } from '$app/paths';
+  import { ImageCloudinaryService, key as imgKey } from '$lib/services/image-formatter.service';
+  import { setContext } from 'svelte';
 
-Let's go over a few quick things:
+  const baseStr = base === undefined ? '' : base;
 
-- This template was built using `@sveltejs/kit@1.0.0-next.511`. I'll keep it updated when I can, but be aware that there things might break since SvelteKit is still in beta.
+  const imgParams = {
+    width: 850
+  }
+  setContext(imgKey, new ImageCloudinaryService());
+</script>
 
-- The theme of this blog is heavily borrowed from Tailwind's ["Spotlight" blog template](https://spotlight.tailwindui.com/). This is _not_ a port of that template, but the styling is pretty much the same.
+<div class="post-image-container">
+  <Image imgPath='/lift-cms-post_mcfm0c' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+</div>
 
-- You should edit the `src/lib/info.js` file to contain your information. This will properly update the parts of the website that display your name, social links, and SEO (meta tags) for your posts.
+## Background
 
-Now that that's out of the way, let's learn about how to make posts.
+This was the second half of the product [Lift Mobile]({baseStr}/projects/lift-mobile): the CMS behind it. The purpose was to have a desktop-only interface for the HR or Engagement folks of an organization to add their members, step challenges, and overall health & wellness content. Along with that, this was a tool to gather health data (when given the appropriate consent) to enable HR to create better suited programs for their organization. 
 
-## Creating a Post
+## Design Process 
 
-All of your posts (including this one) are located in the `posts` folder. They are written in markdown and parsed with mdsvex. If you're unfamiliar with mdsvex, I would recommend [looking at the website](https://mdsvex.com/playground) to see what is all possible out of the box.
+I started this one with the main user persona in mind, the HR or engagement teams of an organization. The Lift CMS was not the regular user of the app, but more like an admin panel of a B2B product. I conducted several in-person interviews and design thinking sessions with the HR staff of our potential clients. My sessions focused on working backwards from my users. For example, it's common for users to sign up using the app so that the burden of adding the members would not be on the admins. However, it was unanimously agreed by the users that bulk uploading of members was easier for them. Instead of pushing forward with conventional approaches, user onboarding was much smoother for the HR admins.
 
-You can add a new post by creating either a new `.md` file or a folder with an `index.md` file:
+<div class="post-image-container">
+  <Image imgPath='lift-cms-mockup_ecam5o' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+</div>
 
-```
-/posts/my-first-post.md
-/posts/my-first-post/index.md
-```
+## Technology Used
+This enterprise application was developed back in 2016-2017. I'm unable to share details behind the decisions, but here's some parts of the tech stack. For the frontend, we wanted a framework that allowed for easy integration with our company's existing engineers and was opinionated enough to save training and onboarding costs. Angular was a good fit for those requirements. We wanted the frontend to be loosely coupled to the backend services to be able to reuse certain REST APIs, so built a microservices architecture in Java. For the database we went with MongoDB to account for flexible data modeling and Redis for caching. 
 
-Make sure your posts have `title` and `date` properties in the front matter:
+## Challenges
 
-```md
----
-title: My First Post
-date: 2021-07-09
-preview: This text will be used for the preview instead of the first paragraph
----
+In any health related app, it was our priority to store any PII data securely. Data anonymization and strict security policies were set in place for the microservices and data stores to protect any health related data. 
 
-(your content here)
-```
+On the design and UX side, one challenge was the bulk data imports that needed to be verified on the frontend first. I handled that with a step-by-step import process that also had clear errors and warnings for any required edits. 
 
-The `preview` property is optional, in case you want to customize the preview text. If the property is added, but the text is left empty, the first paragraph is used automatically.
+Overall the CMS was an engaging project especially with the responsibility of building the frontend and managing the data. 
+
+
+
+
+
+

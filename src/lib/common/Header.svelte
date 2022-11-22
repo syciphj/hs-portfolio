@@ -33,7 +33,7 @@
     <ul class="desktop">
       {#each routes as route}
         {#if route.name !== 'Home'}
-        <li aria-current={$page.route.id === route.routeID ? 'page' : undefined}>
+        <li aria-current={$page.route.id?.startsWith(route.routeID) ? 'page' : undefined}>
           <a href={route.href}>{route.name}</a>
         </li>
         {/if}

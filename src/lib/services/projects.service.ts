@@ -135,7 +135,7 @@ export class ProjectDataService {
   }
 
   getAllProjectPosts = async(): Promise<ProjectMetaData[]> => {
-    const posts : ProjectMetaData[] = await Object.entries(import.meta.glob('/projects/**/*.md', {eager: true}))
+      const posts : ProjectMetaData[] = await Object.entries(import.meta.glob('/projects/**/*.md', {eager: true}))
       .map(([filepath, post]: [string, any]) => {
         const html = parse(post.default.render().html);
         const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
