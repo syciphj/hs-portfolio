@@ -42,6 +42,8 @@
     <h1>{data.post.title}</h1>
 
     <svelte:component this={data.component}/>
+
+    <p class="disclaimer">Works are intellectual property of each client or employer. This site was created to showcase the skills, trade, profession and expertise of the designer / developer.</p>
   </article>
 </div>
 
@@ -80,6 +82,12 @@
     height: 1rem;
     border-left: 3px solid rgba(184, 183, 183, 0.489);
     align-self: center;
+  }
+
+  .disclaimer {
+    margin-top: 3em;
+    font-style: italic;
+    color: rgba(120, 118, 118, 0.8);
   }
 
   @media(max-width: 768px) {

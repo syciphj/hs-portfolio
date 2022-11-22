@@ -18,7 +18,7 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
 </script>
 
 <div class="post-image-container">
-  <Image imgPath='lift-mobile-post_pw6wyi' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+  <Image imgPath='lift-mobile-post_pw6wyi' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
 </div>
 
 ## Background
@@ -28,7 +28,7 @@ Lift was one of the 4 main product offerings under Easimed back in 2017 – a ki
 Think of how organizations or teams would organize walk/run challenges (e.g. team with the most steps win), but there would be an app and CMS that could easily manage that. The features for Lift expanded beyond exercise challenges but also gamified health & wellness tracking that could link to rewards. 
 
 <div class="post-image-container">
-  <Image imgPath='lift-mobile-typography_yqqat0' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+  <Image imgPath='lift-mobile-typography_yqqat0' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
 </div>
 
 ## Design Process 
@@ -38,7 +38,7 @@ Before a single pixel was digitally crafted, I advocated to go through an initia
 From there, I gathered the top solutions from our ideation stage and storyboarded the top flows we as a team agreed on. I crafted the prototypes and facilitated both internal (as our company also wanted this for ourselves) and client user-testing and validation. After the results were presented to our PMs, we agreed on the flow and I crafted the style guide and screens for our mobile devs to work on. 
 
 <div class="post-image-container">
-  <Image imgPath='lift-mobile-mockup_mdaign' params={imgParams}  sizes="(max-width: 700px) 100vw, 350px" hoverEffect="false"/>
+  <Image imgPath='lift-mobile-mockup_mdaign' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
 </div>
 
 ## Challenges

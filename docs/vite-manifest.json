@@ -1,4 +1,12 @@
 {
+  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
+  },
   "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-latin-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
     "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-latin-400-normal.woff2"
@@ -7,33 +15,33 @@
     "file": "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
     "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
-    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
-    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
-    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2"
+  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-400-normal.woff2": {
+    "file": "_app/immutable/assets/open-sans-cyrillic-400-normal-624b7132.woff2",
+    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-400-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
     "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/open-sans-cyrillic-ext-400-normal-bbbef4da.woff2",
-    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2"
+  "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-greek-400-normal.woff2": {
     "file": "_app/immutable/assets/open-sans-greek-400-normal-7bd5dafc.woff2",
     "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-greek-400-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-400-normal.woff2": {
-    "file": "_app/immutable/assets/open-sans-cyrillic-400-normal-624b7132.woff2",
-    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-400-normal.woff2"
+  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/open-sans-cyrillic-ext-400-normal-bbbef4da.woff2",
+    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-latin-400-normal.woff2": {
+    "file": "_app/immutable/assets/open-sans-latin-400-normal-b34551ae.woff2",
+    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-latin-300-normal-78bc3aa7.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-latin-ext-400-normal.woff2": {
     "file": "_app/immutable/assets/open-sans-latin-ext-400-normal-140ef34d.woff2",
@@ -47,33 +55,17 @@
     "file": "_app/immutable/assets/open-sans-hebrew-400-normal-100ac33d.woff2",
     "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-hebrew-400-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-latin-400-normal.woff2": {
-    "file": "_app/immutable/assets/open-sans-latin-400-normal-b34551ae.woff2",
-    "src": "node_modules/.pnpm/@fontsource+open-sans@4.5.13/node_modules/@fontsource/open-sans/files/open-sans-latin-400-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-300-normal.woff2": {
-    "file": "_app/immutable/assets/poppins-latin-ext-300-normal-32282e10.woff2",
-    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-300-normal.woff2"
-  },
   "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-300-normal.woff2": {
     "file": "_app/immutable/assets/poppins-devanagari-300-normal-d531423e.woff2",
     "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-300-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff2": {
-    "file": "_app/immutable/assets/poppins-latin-300-normal-78bc3aa7.woff2",
-    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-600-normal.woff2": {
     "file": "_app/immutable/assets/poppins-devanagari-600-normal-d036ece3.woff2",
     "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-600-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-600-normal.woff2": {
-    "file": "_app/immutable/assets/poppins-latin-ext-600-normal-9c15f7b0.woff2",
-    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-600-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-700-normal.woff2": {
-    "file": "_app/immutable/assets/poppins-devanagari-700-normal-6197a412.woff2",
-    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-700-normal.woff2"
+  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-300-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-latin-ext-300-normal-32282e10.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-300-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2": {
     "file": "_app/immutable/assets/poppins-latin-600-normal-f4e80d9d.woff2",
@@ -83,9 +75,17 @@
     "file": "_app/immutable/assets/poppins-latin-ext-700-normal-4ce2c84c.woff2",
     "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-700-normal.woff2"
   },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-600-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-latin-ext-600-normal-9c15f7b0.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-ext-600-normal.woff2"
+  },
   "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-700-normal.woff2": {
     "file": "_app/immutable/assets/poppins-latin-700-normal-9338e65f.woff2",
     "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-latin-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-700-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-devanagari-700-normal-6197a412.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-devanagari-700-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+fira-mono@4.5.10/node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff": {
     "file": "_app/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
@@ -108,12 +108,12 @@
     "src": "node_modules/.pnpm/@fontsource+poppins@4.5.10/node_modules/@fontsource/poppins/files/poppins-all-700-normal.woff"
   },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.551_svelte@3.52.0+vite@3.2.3/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-e467cd72.js",
+    "file": "_app/immutable/start-8b915fe4.js",
     "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.551_svelte@3.52.0+vite@3.2.3/node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-2c550787.js",
-      "_singletons-b993d9b6.js",
+      "_singletons-19035999.js",
       "_preload-helper-b21cceae.js",
       "_paths-9ec6a9c9.js"
     ],
@@ -127,12 +127,12 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-a3491689.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-5bc6defe.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-2c550787.js",
-      "_stores-ed96ecd8.js",
+      "_stores-edfb346c.js",
       "_paths-9ec6a9c9.js",
       "_Socials-cd7d99c1.js",
       "_image-formatter.service-4cc2bfe8.js"
@@ -171,16 +171,16 @@
     ]
   },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.551_svelte@3.52.0+vite@3.2.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-385dae2f.js",
+    "file": "_app/immutable/components/error.svelte-d9fb9590.js",
     "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.551_svelte@3.52.0+vite@3.2.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-2c550787.js",
-      "_stores-ed96ecd8.js"
+      "_stores-edfb346c.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-9b2be61b.js",
+    "file": "_app/immutable/components/pages/_page.svelte-6ec5923f.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -219,15 +219,15 @@
     ]
   },
   "src/routes/projects/[slug]/+page.svelte": {
-    "file": "_app/immutable/components/pages/projects/_slug_/_page.svelte-f8e21056.js",
+    "file": "_app/immutable/components/pages/projects/_slug_/_page.svelte-2894ffd7.js",
     "src": "src/routes/projects/[slug]/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-2c550787.js",
-      "_singletons-b993d9b6.js"
+      "_singletons-19035999.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-0ac3de58.css"
+      "_app/immutable/assets/_page-d691ebe5.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -239,16 +239,16 @@
     ]
   },
   "src/routes/projects/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/projects/_slug_/_page.ts-c5341b5c.js",
+    "file": "_app/immutable/modules/pages/projects/_slug_/_page.ts-90d2f12e.js",
     "src": "src/routes/projects/[slug]/+page.ts",
     "isEntry": true,
     "imports": [
       "_preload-helper-b21cceae.js",
-      "__page-09577de6.js"
+      "__page-19dfcc56.js"
     ]
   },
-  "_singletons-b993d9b6.js": {
-    "file": "_app/immutable/chunks/singletons-b993d9b6.js",
+  "_singletons-19035999.js": {
+    "file": "_app/immutable/chunks/singletons-19035999.js",
     "imports": [
       "_index-2c550787.js",
       "_paths-9ec6a9c9.js"
@@ -269,11 +269,11 @@
       "_website-a4b2f3f2.js"
     ]
   },
-  "_stores-ed96ecd8.js": {
-    "file": "_app/immutable/chunks/stores-ed96ecd8.js",
+  "_stores-edfb346c.js": {
+    "file": "_app/immutable/chunks/stores-edfb346c.js",
     "imports": [
       "_index-2c550787.js",
-      "_singletons-b993d9b6.js"
+      "_singletons-19035999.js"
     ]
   },
   "_Socials-cd7d99c1.js": {
@@ -302,8 +302,8 @@
       "_app/immutable/assets/Image-8aa15b1f.css"
     ]
   },
-  "__page-09577de6.js": {
-    "file": "_app/immutable/chunks/_page-09577de6.js",
+  "__page-19dfcc56.js": {
+    "file": "_app/immutable/chunks/_page-19dfcc56.js",
     "imports": [
       "_preload-helper-b21cceae.js"
     ],
@@ -314,7 +314,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-7f0bd90d.js",
+    "file": "_app/immutable/chunks/0-27234d5e.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -323,7 +323,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-89cec225.js",
+    "file": "_app/immutable/chunks/1-ee30d687.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -331,7 +331,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-76c71bba.js",
+    "file": "_app/immutable/chunks/2-ad77d236.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -355,24 +355,26 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-e86e8395.js",
+    "file": "_app/immutable/chunks/5-4a465173.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-09577de6.js",
+      "__page-19dfcc56.js",
       "src/routes/projects/[slug]/+page.svelte"
     ]
   },
   "projects/easimed/index.md": {
-    "file": "_app/immutable/chunks/index-0af1821f.js",
+    "file": "_app/immutable/chunks/index-b245e067.js",
     "src": "projects/easimed/index.md",
     "isDynamicEntry": true,
     "imports": [
-      "_index-2c550787.js"
+      "_index-2c550787.js",
+      "_Image-ccdb3599.js",
+      "_image-formatter.service-4cc2bfe8.js"
     ]
   },
   "projects/lift-cms/index.md": {
-    "file": "_app/immutable/chunks/index-2f443a4c.js",
+    "file": "_app/immutable/chunks/index-2f801ca4.js",
     "src": "projects/lift-cms/index.md",
     "isDynamicEntry": true,
     "imports": [
@@ -383,7 +385,7 @@
     ]
   },
   "projects/lift-mobile/index.md": {
-    "file": "_app/immutable/chunks/index-1554658a.js",
+    "file": "_app/immutable/chunks/index-6e1ad8f2.js",
     "src": "projects/lift-mobile/index.md",
     "isDynamicEntry": true,
     "imports": [
@@ -392,29 +394,29 @@
       "_image-formatter.service-4cc2bfe8.js"
     ]
   },
-  "Socials.css": {
-    "file": "_app/immutable/assets/Socials-e6a74011.css",
-    "src": "Socials.css"
-  },
-  "src/routes/projects/[slug]/+page.css": {
-    "file": "_app/immutable/assets/_page-0ac3de58.css",
-    "src": "src/routes/projects/[slug]/+page.css"
-  },
   "src/routes/contact/+page.css": {
     "file": "_app/immutable/assets/_page-42f45beb.css",
     "src": "src/routes/contact/+page.css"
   },
-  "src/routes/projects/+page.css": {
-    "file": "_app/immutable/assets/_page-900a39a7.css",
-    "src": "src/routes/projects/+page.css"
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-0e5aa4fd.css",
+    "src": "src/routes/+page.css"
+  },
+  "Socials.css": {
+    "file": "_app/immutable/assets/Socials-e6a74011.css",
+    "src": "Socials.css"
   },
   "Image.css": {
     "file": "_app/immutable/assets/Image-8aa15b1f.css",
     "src": "Image.css"
   },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-0e5aa4fd.css",
-    "src": "src/routes/+page.css"
+  "src/routes/projects/[slug]/+page.css": {
+    "file": "_app/immutable/assets/_page-d691ebe5.css",
+    "src": "src/routes/projects/[slug]/+page.css"
+  },
+  "src/routes/projects/+page.css": {
+    "file": "_app/immutable/assets/_page-900a39a7.css",
+    "src": "src/routes/projects/+page.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-d71fe473.css",

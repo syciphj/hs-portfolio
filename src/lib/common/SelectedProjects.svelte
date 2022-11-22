@@ -31,7 +31,8 @@
 </script>
 
 <section>
-  <h1>Selected commercial projects</h1>
+  <h1>Selected projects</h1>
+  <p>Here's some of my favorite works so far:</p>
   <div class="project-container">
 
     <!-- Lift Mobile -->

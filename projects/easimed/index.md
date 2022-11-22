@@ -1,46 +1,46 @@
 ---
 title: Easimed
-date: 2022-03-01
-thumbnailID: lift-thumbnail_ulqrrq
-preview: Lift was a commercial health & wellness app curated for companies to customize their own wellness programs. Life Mobile was the customer-facing app.'
-roles: [UX, Design]
-designTools: [Illustrator, Photoshop, Sketch, Figma]
+date: 2022-10-01
+thumbnailID: easimed-thumbnail_ayzplw
+preview: Easimed was the umbrella brand of my employer back in 2017. It was a team that served as a startup lab focused on enterprise healthcare applications.
+roles: [Design, Frontend]
+techTools: [HTML, Sass, Jquery]
+designTools: [Illustrator, Photoshop, Sketch]
 
 ---
 
-Thanks for checking out my blog template. It's based on the blog I built for my own [website](https://mattjennings.io) and I hope this is a good starting point for you to start yours.
+<script>
+  import Image from '$lib/common/Image.svelte';
+  import { ImageCloudinaryService, key as imgKey } from '$lib/services/image-formatter.service';
+  import { setContext } from 'svelte';
+  
+  const imgParams = {
+    width: 850
+  }
+  setContext(imgKey, new ImageCloudinaryService());
+</script>
 
-Let's go over a few quick things:
+<div class="post-image-container">
+  <Image imgPath='easimed-post_o0yoth' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+</div>
 
-- This template was built using `@sveltejs/kit@1.0.0-next.511`. I'll keep it updated when I can, but be aware that there things might break since SvelteKit is still in beta.
+## Background
 
-- The theme of this blog is heavily borrowed from Tailwind's ["Spotlight" blog template](https://spotlight.tailwindui.com/). This is _not_ a port of that template, but the styling is pretty much the same.
+Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products. The team was a startup lab focused on enterprise healthcare applications. Most of the products I designed and implemented while working for this company were under this umbrella brand. It started as a single mobile application that served as a health service locator for local insurance companies. It grew into a multi product brand each serving thousands of users. I was tasked to create the landing page in a week. 
 
-- You should edit the `src/lib/info.js` file to contain your information. This will properly update the parts of the website that display your name, social links, and SEO (meta tags) for your posts.
+As of 2022, the landing page is still up at <a href="https://www.easimed.com.ph" target="_blank" rel="noreferrer">easimed.com.ph</a> Most of the links are no longer working as the team has since been dissolved and some products have been rebranded. Note: keep the site in a separate tab. Some deprecated code is causing a regression interaction with the History API, calling it too many times. 
 
-Now that that's out of the way, let's learn about how to make posts.
+<div class="post-image-container">
+  <Image imgPath='easimed-typography_n5afey' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+</div>
 
-## Creating a Post
+## Design and Technical
 
-All of your posts (including this one) are located in the `posts` folder. They are written in markdown and parsed with mdsvex. If you're unfamiliar with mdsvex, I would recommend [looking at the website](https://mdsvex.com/playground) to see what is all possible out of the box.
+At the time, the requirement was to showcase 3 main products and their respective mockups. My inspiration at the time was the Apple website that showcased mockups reacting to scroll effects.
+Due to the limited time requirement to get the landing page launched, the site was a plain static page bundled with Gulp and Bower. I used a Sass as the styling preprocessor. For the scroll effects, I used Jquery together with ScrollMagic to handle the scroll effects. The site assets were then hosted in an AWS EC2. 
 
-You can add a new post by creating either a new `.md` file or a folder with an `index.md` file:
+The great thing about just using a static site for such a simple use case is that server fees are kept low and has almost free scaling even when users go up. It's probably the reason why the site is still up after all this time. 
 
-```
-/posts/my-first-post.md
-/posts/my-first-post/index.md
-```
-
-Make sure your posts have `title` and `date` properties in the front matter:
-
-```md
----
-title: My First Post
-date: 2021-07-09
-preview: This text will be used for the preview instead of the first paragraph
----
-
-(your content here)
-```
-
-The `preview` property is optional, in case you want to customize the preview text. If the property is added, but the text is left empty, the first paragraph is used automatically.
+<div class="post-image-container">
+  <Image imgPath='easimed-post-2_oyrxny' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+</div>
