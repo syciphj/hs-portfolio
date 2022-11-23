@@ -5,7 +5,7 @@
 <section class="hero">
   <h1>Heya, Henri here.</h1>
   <h2>I design, code, and lead global teams. </h2>
-  <p>I have been leading support and development teams for 5 years. On top of that, I've been designing and implementing delightful user experiences for both mobile and desktop apps.</p>
+  <p>For 5 years now, I have been leading support and development teams. On top of that, I design and implement delightful user experiences for both mobile and desktop.</p>
 
   <div class="socials-container"> 
     <Socials/>

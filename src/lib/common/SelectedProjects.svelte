@@ -44,7 +44,7 @@
           <li>Design</li>
         </ul>
         <p>Lift was a commercial health & wellness app curated for companies to customize their own wellness programs.
-          Lift Mobile was the customer-facing app.
+          I did the UX Research and Design for iOS and Android.
         </p>
         <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>
@@ -73,7 +73,7 @@
           <li>Design</li>
           <li>Fullstack Dev</li>
         </ul>
-        <p>Lift CMS was the the desktop app that controlled the events and wellness programs behind the scenes. </p>
+        <p>Lift CMS was the the desktop app that controlled the content and membership of the Lift mobile app. I designed and developed the whole site.</p>
         <a href="{baseStr}/projects/lift-cms" class="nav-button">View details</a>
       </div>
     </div>
@@ -87,7 +87,7 @@
           <li>Branding</li>
           <li>Frontend Dev</li>
         </ul>
-        <p>Easimed was the umbrella brand that provided several healthcare applications. I created the marketing site for Easimed to showcase its different products.</p>
+        <p>Easimed was the umbrella brand that provided several healthcare applications. I developed the marketing site for Easimed to showcase its different products.</p>
         <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
       </div>
       <div class="project-image hidden">
