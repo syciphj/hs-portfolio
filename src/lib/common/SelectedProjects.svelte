@@ -32,13 +32,13 @@
 
 <section>
   <h1>Selected projects</h1>
-  <p>Here's some of my favorite works so far:</p>
+  <p>Here is a quick peek at some of my favorite works and projects so far</p>
   <div class="project-container">
 
     <!-- Lift Mobile -->
     <div class="project-card">
       <div class="project-blurb">
-        <h2>Lift Mobile</h2>
+        <h2 class="project-title">Lift Mobile</h2>
         <ul class="roles">
           <li>UX</li>
           <li>Design</li>
@@ -49,17 +49,25 @@
         <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>
       <div class="project-image hidden">
-        <Image imgPath={imagePaths.liftMobile} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
+        <Image imgPath={imagePaths.liftMobile} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px" 
+               class="featured-img"
+               alt="Lift Mobile Featured Image"/>
       </div>
     </div>
 
     <!-- Lift CMS -->
     <div class="project-card">
       <div class="project-image hidden">
-        <Image imgPath={imagePaths.liftDesktop} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
+        <Image imgPath={imagePaths.liftDesktop} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px"  
+               class="featured-img"
+               alt="Lift CMS Featured Image"/>
       </div>
       <div class="project-blurb text-right">
-        <h2>Lift CMS</h2>
+        <h2 class="project-title">Lift CMS</h2>
         <ul class="roles flex-end">
           <li>UX</li>
           <li>Design</li>
@@ -73,7 +81,7 @@
     <!-- Easimed Brand-->
     <div class="project-card">
       <div class="project-blurb">
-        <h2>Easimed</h2>
+        <h2 class="project-title">Easimed</h2>
         <ul class="roles">
           <li>Design</li>
           <li>Branding</li>
@@ -83,7 +91,11 @@
         <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
       </div>
       <div class="project-image hidden">
-        <Image imgPath={imagePaths.easimed} params={projectImageParams} sizes="(max-width: 700px) 100vw, 450px" />
+        <Image imgPath={imagePaths.easimed} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px"  
+               class="featured-img"
+               alt="Easimed Featured Image"/>
       </div>
     </div>
   </div>
@@ -98,7 +110,8 @@
 
 <style>
   h1 {
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -138,8 +151,8 @@
     align-self: center;
   }
 
-  .project-blurb h2 {
-    font-size: 2.5rem;
+  .project-title {
+    font-size: 1.8rem;
     margin: 0;
   }
 
@@ -167,6 +180,7 @@
     margin-bottom: 3em;
     
   }
+
   @media (max-width: 800px) {
     .project-image {
       width: 400px;

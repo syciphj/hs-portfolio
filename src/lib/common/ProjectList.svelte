@@ -17,7 +17,7 @@
   <div class="project-card">
     <a class="card-grid" href="{baseStr}/projects/{project.slug}">
       <div class="project-thumbnail">
-        <Image imgPath={project.thumbnailID} params={thumbnailParams} sizes="(max-width: 700px) 100vw, 350px" />
+        <Image imgPath={project.thumbnailID} params={thumbnailParams} sizes="(max-width: 700px) 100vw, 350px" alt="{project.title} thumbnail"/>
       </div>
       <h2 class="project-title">{project.title}</h2>
       

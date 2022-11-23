@@ -21,7 +21,6 @@
     sizesSrcsetArr.forEach(src => {imgSrcSet += src});
     densitySrcsetArr.forEach(src => {pictureSrcSet += src});
   } else {
-    // throw new Error('Image service was not initialized');
     console.log('Image service not initialized');
   }
   
@@ -35,16 +34,13 @@
       srcset={imgSrcSet}
       width={params.width}
       sizes={sizes}
-      alt="Lift Sample Images"
+      alt={$$props.alt}
+      class={$$props.class}
       class:hoverEffect={hoverEffect === 'true'}
       >
 </picture>
 
 <style>
-  /* img:hover{
-    transform: scale(1.2)
-  } */
-
   img.hoverEffect:hover {
     transform: scale(1.2)
   }
@@ -52,7 +48,6 @@
   img{
     transition: height 0.5s ease-in-out, transform 0.6s ease-in-out; 
     object-fit: contain;
-    width: 100%;
   }
 </style>
 

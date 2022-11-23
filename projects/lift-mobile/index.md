@@ -23,7 +23,7 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
 
 ## Background
 
-Lift was one of the 4 main product offerings under Easimed back in 2017 – a kind of Startup Labs under Pointwest Inc. The idea for Lift was to have customizable product specifically tailored for companies and organizations that wanted more control and interactivity for their health & wellness programs. 
+Lift was one of the 4 main product offerings under Easimed – a kind of Startup Labs under my previous employer back in 2017. The idea for Lift was to have customizable product specifically tailored for companies and organizations that wanted more control and interactivity for their health & wellness programs. 
 
 Think of how organizations or teams would organize walk/run challenges (e.g. team with the most steps win), but there would be an app and CMS that could easily manage that. The features for Lift expanded beyond exercise challenges but also gamified health & wellness tracking that could link to rewards. 
 
