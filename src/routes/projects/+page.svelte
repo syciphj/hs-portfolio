@@ -4,9 +4,9 @@
   export let data: PageData;
 </script>
 
-<svlete:head>
+<svelte:head>
   <title>Projects</title>
   <meta name="description" content="Full list of projects" />
-</svlete:head>
+</svelte:head>
 
 <ProjectList projects={data.projects}/>

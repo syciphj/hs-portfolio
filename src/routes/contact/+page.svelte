@@ -2,10 +2,10 @@
   import Socials from '$lib/common/Socials.svelte'
 </script>
 
-<svlete:head>
+<svelte:head>
   <title>Contact</title>
   <meta name="description" content="Reach out" />
-</svlete:head>
+</svelte:head>
 
 <h1>Let's have a chat</h1>
 
