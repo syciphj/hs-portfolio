@@ -5,8 +5,8 @@
 <section class="hero">
   <h1>Heya, Henri here.</h1>
   <h2>I design, code, and lead global teams. </h2>
-  <p>For 5 years now, I have been leading support and development teams. On top of that, I design and implement delightful user experiences for both mobile and desktop.</p>
-
+  <p>I'm a team lead of support and development teams. 
+    I love designing and implementing delightful user experiences for both mobile and desktop.</p>
   <div class="socials-container"> 
     <Socials/>
   </div>
@@ -44,6 +44,7 @@
   }
 
   .socials-container {
+    margin-top: 1.5em;
     width: 10em;
   }
   
