@@ -1,1 +1,0 @@
-const o="https://res.cloudinary.com/dsatw0cbp/image/upload",i="v1668114809/Portfolio",t="localhost:5173",c="https://www.linkedin.com/in/henri-sycip/",s="syciphj@gmail.com",n="https://github.com/syciphj",L={cloudinaryURL:o,cloudinaryVersionFolder:i,domain:t,linkedinURL:c,githubURL:n,email:s};export{L as w};
