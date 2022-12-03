@@ -57,7 +57,7 @@
 
   .card-grid {
     display:grid;
-    grid-template-rows: 150px 100px 40px 25px;;
+    grid-template-rows: 150px 100px 40px 25px;
     grid-template-columns: repeat(4, 25%);
   }
 
