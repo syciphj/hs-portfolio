@@ -59,7 +59,6 @@ export class ImageCloudinaryService {
       sizesParams.width = initialWidth * i;
       const comma = i === numResolutionTypes ? '' : ', ';
       sizesSrcset.push(`${this.buildCloudinaryURL(fileString, sizesParams)} ${sizesParams.width}w` + comma)
-      //sizesSrcset += ;
     }
     return sizesSrcset;
   }

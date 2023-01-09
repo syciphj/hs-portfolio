@@ -13,7 +13,8 @@ export enum ProjectRoles {
   Frontend = 'Frontend',
   Branding = 'Branding',
   Leadership = 'Leadership',
-  Support = 'Support'
+  Support = 'Support',
+  PM = 'Program Management'
 }
 
 export enum DesignTools {
@@ -30,7 +31,14 @@ export enum TechTools {
   MongoDB = 'MongoDB',
   Angular = 'Angular',
   React = 'React',
-  Svelte = 'Svelte'
+  Svelte = 'Svelte',
+  SQL = 'SQL',
+  Javascript = 'Javascript',
+  Data_warehouse = 'Data Warehouse',
+  REST_APIS = 'REST APIs',
+  gRPC = 'gRPC',
+  Android = 'Android',
+  iOS = 'iOS'
 }
 
 export interface Project {

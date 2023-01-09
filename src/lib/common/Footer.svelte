@@ -5,7 +5,7 @@
 
 <footer>
   <div class="footer-rights">
-    © 2022 Henri Sycip. All rights reserved.
+    © 2023 Henri Sycip. All rights reserved.
   </div>
 
   <div class="footer-links">

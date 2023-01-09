@@ -5,6 +5,7 @@
   import Image from '$lib/common/Image.svelte';
   import type {ImageParams} from '$lib/services/image-formatter.service';
   const imagePaths = {
+    hclTechGoogle: 'hcl-google-highlight_kd3yuo',
     liftMobile: 'lift-highlight_yb3vxp',
     liftDesktop: 'lift-desktop-highlight_ozpecm',
     easimed: 'easimed-highlight_xwgoqb'
@@ -32,14 +33,42 @@
 
 <section>
   <h1>Selected projects</h1>
-  <p>Here is a quick peek at some of my favorite works and projects so far</p>
+  <p>Here is a quick peek at some of my favorite works and projects so far.</p>
   <div class="project-container">
+
+    <!-- HCLTech x Google -->
+    <div class="project-card">
+      <div class="project-blurb">
+        <h2 class="project-title">HCLTech x Google</h2>
+        <ul class="roles">
+          <li>Leadership</li>
+          <li>Support Eng.</li>
+        </ul>
+        <p> I worked at HCLTech Philippines to build a technical support engineering team for Google. After 5 years, in late 2022, I left as the senior Team Lead after expanding the team seven-fold into different functional teams.</p>
+        <a href="{baseStr}/projects/hcltech-google" class="nav-button">view details</a>
+      </div>
+      <div class="project-image hidden">
+        <Image imgPath={imagePaths.hclTechGoogle} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px" 
+               class="featured-img"
+               alt="HCLTech and Google"/>
+      </div>
+    </div>
 
     <!-- Lift Mobile -->
     <div class="project-card">
-      <div class="project-blurb">
+      <div class="project-image hidden flex flex-end">
+        <Image imgPath={imagePaths.liftMobile} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px" 
+               class="featured-img sm-zoom"
+               alt="Lift Mobile Featured Image"/>
+      </div>
+
+      <div class="project-blurb text-right">
         <h2 class="project-title">Lift Mobile</h2>
-        <ul class="roles">
+        <ul class="roles flex-end">
           <li>UX</li>
           <li>Design</li>
         </ul>
@@ -48,27 +77,13 @@
         </p>
         <a href="{baseStr}/projects/lift-mobile" class="nav-button">view details</a>
       </div>
-      <div class="project-image hidden">
-        <Image imgPath={imagePaths.liftMobile} 
-               params={projectImageParams} 
-               sizes="(max-width: 700px) 100vw, 450px" 
-               class="featured-img"
-               alt="Lift Mobile Featured Image"/>
-      </div>
     </div>
 
     <!-- Lift CMS -->
     <div class="project-card">
-      <div class="project-image hidden">
-        <Image imgPath={imagePaths.liftDesktop} 
-               params={projectImageParams} 
-               sizes="(max-width: 700px) 100vw, 450px"  
-               class="featured-img"
-               alt="Lift CMS Featured Image"/>
-      </div>
-      <div class="project-blurb text-right">
+      <div class="project-blurb">
         <h2 class="project-title">Lift CMS</h2>
-        <ul class="roles flex-end">
+        <ul class="roles">
           <li>UX</li>
           <li>Design</li>
           <li>Fullstack Dev</li>
@@ -76,26 +91,34 @@
         <p>Lift CMS was the the desktop app that controlled the content and membership of the Lift mobile app. I designed and developed the whole site.</p>
         <a href="{baseStr}/projects/lift-cms" class="nav-button">View details</a>
       </div>
+
+      <div class="project-image hidden">
+        <Image imgPath={imagePaths.liftDesktop} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px"  
+               class="featured-img sm-zoom"
+               alt="Lift CMS Featured Image"/>
+      </div>
     </div>
 
     <!-- Easimed Brand-->
     <div class="project-card">
-      <div class="project-blurb">
+      <div class="project-image hidden flex flex-end">
+        <Image imgPath={imagePaths.easimed} 
+               params={projectImageParams} 
+               sizes="(max-width: 700px) 100vw, 450px"  
+               class="featured-img sm-zoom"
+               alt="Easimed Featured Image"/>
+      </div>
+      <div class="project-blurb text-right">
         <h2 class="project-title">Easimed</h2>
-        <ul class="roles">
+        <ul class="roles flex-end">
           <li>Design</li>
           <li>Branding</li>
           <li>Frontend Dev</li>
         </ul>
         <p>Easimed was the umbrella brand that provided several healthcare applications. I developed the marketing site for Easimed to showcase its different products.</p>
         <a href="{baseStr}/projects/easimed" class="nav-button">View Details</a>
-      </div>
-      <div class="project-image hidden">
-        <Image imgPath={imagePaths.easimed} 
-               params={projectImageParams} 
-               sizes="(max-width: 700px) 100vw, 450px"  
-               class="featured-img"
-               alt="Easimed Featured Image"/>
       </div>
     </div>
   </div>
@@ -125,6 +148,10 @@
   .text-right {
     text-align: right;
   }
+
+  .flex {
+    display: flex;
+  }
   
   .flex-end {
     justify-content: flex-end;
@@ -148,7 +175,6 @@
 
   .project-blurb {
     width: 40%;
-    align-self: center;
   }
 
   .project-title {
@@ -214,7 +240,7 @@
 
   @media (max-width: 400px) {
     .project-image {
-      margin-bottom: 0;
+      margin-bottom: 0.5em;
       height: auto;
     }
   }

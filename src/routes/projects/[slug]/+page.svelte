@@ -4,7 +4,6 @@
   import { afterNavigate } from '$app/navigation'
   import website  from '$lib/config/website'
   import ArrowLeftIcon from '$lib/assets/icons/ArrowLeftIcon.svelte';
-
   export let data: PageData;
 
   let canBack = false;
