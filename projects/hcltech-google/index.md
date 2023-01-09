@@ -21,7 +21,7 @@ techTools: [HTML, Javascript, SQL, Data Warehouse, REST APIs, gRPC, Android, iOS
 </script>
 
 <div class="post-image-container">
-  <Image imgPath='hcl-google-post_mzbeds' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+  <Image imgPath='hcl-google-post_mzbeds' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false" height="730"/>
 </div>
 
  During mid 2017, I worked at [HCLTech](https://www.hcltech.com/) Philippines and started as a support engineer SME partnered with Google as our client. I was given a goal at the time: to start a technical support team for a Google platform product in APAC. After 5 years, in late 2022, I left as the senior Team Lead after expanding the team seven-fold into different functional teams. While I cannot share specifics about Google and HCLTech projects, I’ll be sharing are personal highlights on the challenges and lessons I’ve encountered about building, leading, and growing a technical team.

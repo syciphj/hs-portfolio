@@ -22,7 +22,8 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Insight Sample Screens"/>
+         alt="Insight Sample Screens"
+         height="640"/>
 </div>
 
 ## Background
@@ -40,7 +41,8 @@ Similar to my process with Sage, I prioritized the User Research stage before dr
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Sage Typography and Colors"/>
+         alt="Sage Typography and Colors"
+         height="565"/>
 </div>
 
 
@@ -54,7 +56,8 @@ I used the suggestions and new insights from doctors to further ideate and come 
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Sage mockups on iPad"/>
+         alt="Sage mockups on iPad"
+         height="640"/>
 </div>
 
 

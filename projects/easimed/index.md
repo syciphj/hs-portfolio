@@ -21,7 +21,7 @@ designTools: [Illustrator, Photoshop, Sketch]
 </script>
 
 <div class="post-image-container">
-  <Image imgPath='easimed-post_o0yoth' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+  <Image imgPath='easimed-post_o0yoth' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false" height="420"/>
 </div>
 
 ## Background
@@ -31,7 +31,7 @@ Easimed was the umbrella brand that provided several healthcare applications. I 
 As of 2022, the landing page is still up at <a href="https://www.easimed.com.ph" target="_blank" rel="noreferrer">easimed.com.ph</a> Most of the links are no longer working as the team has since been dissolved and some products have been rebranded. Note: keep the site in a separate tab. Some deprecated code is causing a regression interaction with the History API, calling it too many times. 
 
 <div class="post-image-container">
-  <Image imgPath='easimed-typography_n5afey' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+  <Image imgPath='easimed-typography_n5afey' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false" height="500"/>
 </div>
 
 ## Design and Technical

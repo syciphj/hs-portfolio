@@ -52,7 +52,8 @@
                params={projectImageParams} 
                sizes="(max-width: 700px) 100vw, 450px" 
                class="featured-img"
-               alt="HCLTech and Google"/>
+               alt="HCLTech and Google"
+               height="400"/>
       </div>
     </div>
 
@@ -63,7 +64,8 @@
                params={projectImageParams} 
                sizes="(max-width: 700px) 100vw, 450px" 
                class="featured-img sm-zoom"
-               alt="Lift Mobile Featured Image"/>
+               alt="Lift Mobile Featured Image"
+               height="400"/>
       </div>
 
       <div class="project-blurb text-right">
@@ -97,7 +99,8 @@
                params={projectImageParams} 
                sizes="(max-width: 700px) 100vw, 450px"  
                class="featured-img sm-zoom"
-               alt="Lift CMS Featured Image"/>
+               alt="Lift CMS Featured Image"
+               height="400"/>
       </div>
     </div>
 
@@ -108,7 +111,8 @@
                params={projectImageParams} 
                sizes="(max-width: 700px) 100vw, 450px"  
                class="featured-img sm-zoom"
-               alt="Easimed Featured Image"/>
+               alt="Easimed Featured Image"
+               height="400"/>
       </div>
       <div class="project-blurb text-right">
         <h2 class="project-title">Easimed</h2>
@@ -168,6 +172,7 @@
     display: flex;
     width: 100%;
     margin: 2em 1em;
+    padding: 1em;
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;

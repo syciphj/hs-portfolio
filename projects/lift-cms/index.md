@@ -23,7 +23,7 @@ designTools:  [Illustrator, Photoshop, Sketch]
 </script>
 
 <div class="post-image-container">
-  <Image imgPath='lift-cms-post_mcfm0c' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+  <Image imgPath='lift-cms-post_mcfm0c' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false" height="638"/>
 </div>
 
 ## Background
@@ -35,7 +35,7 @@ This was the second half of the product [Lift Mobile]({baseStr}/projects/lift-mo
 I started this one with the main user persona in mind, the HR or engagement teams of an organization. The Lift CMS was not the regular user of the app, but more like an admin panel of a B2B product. I conducted several in-person interviews and design thinking sessions with the HR staff of our potential clients. My sessions focused on working backwards from my users. For example, it's common for users to sign up using the app so that the burden of adding the members would not be on the admins. However, it was unanimously agreed by the users that bulk uploading of members was easier for them. Instead of pushing forward with conventional approaches, user onboarding was much smoother for the HR admins.
 
 <div class="post-image-container">
-  <Image imgPath='lift-cms-mockup_ecam5o' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false"/>
+  <Image imgPath='lift-cms-mockup_ecam5o' params={imgParams}  sizes="(max-width: 700px) 100vw, 850px" hoverEffect="false" height="600"/>
 </div>
 
 ## Technology Used

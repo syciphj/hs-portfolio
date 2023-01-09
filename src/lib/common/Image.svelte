@@ -26,6 +26,9 @@
   
 </script>
 <picture>
+  <!-- For this portfolio, I am using picture srcset based on pixel density (1x, 2x, 3x). 
+  Using Pixel density will ignore the picture sizes param
+  https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#resolution_switching_same_size_different_resolutions -->
   <source srcset={pictureSrcSet} type="image/webp">
   <img  
       loading="lazy"
@@ -33,6 +36,7 @@
       src={src}
       srcset={imgSrcSet}
       width={params.width}
+      height={$$props.height}
       sizes={sizes}
       alt={$$props.alt}
       class={$$props.class}

@@ -22,7 +22,8 @@ designTools:  [Illustrator, Photoshop, Sketch, Figma]
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Sage Sample Screens"/>
+         alt="Sage Sample Screens"
+         height="829"/>
 </div>
 
 ## Background
@@ -38,7 +39,8 @@ Most User Research was done online or with a certain separation between the UX R
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Sage Typography and Colors"/>
+         alt="Sage Typography and Colors"
+         height="500"/>
 </div>
 
 During the Prototyping and Testing stage, I went through multiple feedback cycles with stakeholders and users on the field to verify flow that was easiest for the users while maintaining the requirements of the HMOs. As usual in the Design Thinking process, a lot of new painpoints and insights were brought to light and I iterated with new solutions for each one. With a working set of prototypes in hand, I was able to present the quantitatively most successful prototypes, got client approvals, and our mobile & backend engineers proceeded with development. 
@@ -48,7 +50,8 @@ During the Prototyping and Testing stage, I went through multiple feedback cycle
          params={imgParams}  
          sizes="(max-width: 700px) 100vw, 850px" 
          hoverEffect="false"
-         alt="Sage mockups on iPad"/>
+         alt="Sage mockups on iPad"
+         height="750"/>
 </div>
 
 ## Challenges
